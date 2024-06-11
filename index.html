@@ -1,0 +1,1304 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head><meta charset="UTF-8"><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>(()=>{class RocketLazyLoadScripts{constructor(){this.v="1.2.5.1",this.triggerEvents=["keydown","mousedown","mousemove","touchmove","touchstart","touchend","wheel"],this.userEventHandler=this.t.bind(this),this.touchStartHandler=this.i.bind(this),this.touchMoveHandler=this.o.bind(this),this.touchEndHandler=this.h.bind(this),this.clickHandler=this.u.bind(this),this.interceptedClicks=[],this.interceptedClickListeners=[],this.l(this),window.addEventListener("pageshow",(t=>{this.persisted=t.persisted,this.everythingLoaded&&this.m()})),document.addEventListener("DOMContentLoaded",(()=>{this.p()})),this.delayedScripts={normal:[],async:[],defer:[]},this.trash=[],this.allJQueries=[]}k(t){document.hidden?t.t():(this.triggerEvents.forEach((e=>window.addEventListener(e,t.userEventHandler,{passive:!0}))),window.addEventListener("touchstart",t.touchStartHandler,{passive:!0}),window.addEventListener("mousedown",t.touchStartHandler),document.addEventListener("visibilitychange",t.userEventHandler))}_(){this.triggerEvents.forEach((t=>window.removeEventListener(t,this.userEventHandler,{passive:!0}))),document.removeEventListener("visibilitychange",this.userEventHandler)}i(t){"HTML"!==t.target.tagName&&(window.addEventListener("touchend",this.touchEndHandler),window.addEventListener("mouseup",this.touchEndHandler),window.addEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.addEventListener("mousemove",this.touchMoveHandler),t.target.addEventListener("click",this.clickHandler),this.L(t.target,!0),this.M(t.target,"onclick","rocket-onclick"),this.C())}o(t){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler),t.target.removeEventListener("click",this.clickHandler),this.L(t.target,!1),this.M(t.target,"rocket-onclick","onclick"),this.O()}h(){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler)}u(t){t.target.removeEventListener("click",this.clickHandler),this.L(t.target,!1),this.M(t.target,"rocket-onclick","onclick"),this.interceptedClicks.push(t),t.preventDefault(),t.stopPropagation(),t.stopImmediatePropagation(),this.O()}D(){window.removeEventListener("touchstart",this.touchStartHandler,{passive:!0}),window.removeEventListener("mousedown",this.touchStartHandler),this.interceptedClicks.forEach((t=>{t.target.dispatchEvent(new MouseEvent("click",{view:t.view,bubbles:!0,cancelable:!0}))}))}l(t){EventTarget.prototype.addEventListenerBase=EventTarget.prototype.addEventListener,EventTarget.prototype.addEventListener=function(e,i,o){"click"!==e||t.windowLoaded||i===t.clickHandler||t.interceptedClickListeners.push({target:this,func:i,options:o}),(this||window).addEventListenerBase(e,i,o)}}L(t,e){this.interceptedClickListeners.forEach((i=>{i.target===t&&(e?t.removeEventListener("click",i.func,i.options):t.addEventListener("click",i.func,i.options))})),t.parentNode!==document.documentElement&&this.L(t.parentNode,e)}S(){return new Promise((t=>{this.T?this.O=t:t()}))}C(){this.T=!0}O(){this.T=!1}M(t,e,i){t.hasAttribute&&t.hasAttribute(e)&&(event.target.setAttribute(i,event.target.getAttribute(e)),event.target.removeAttribute(e))}t(){this._(this),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",this.R.bind(this)):this.R()}p(){let t=[];document.querySelectorAll("script[type=rocketlazyloadscript][data-rocket-src]").forEach((e=>{let i=e.getAttribute("data-rocket-src");if(i&&0!==i.indexOf("data:")){0===i.indexOf("//")&&(i=location.protocol+i);try{const o=new URL(i).origin;o!==location.origin&&t.push({src:o,crossOrigin:e.crossOrigin||"module"===e.getAttribute("data-rocket-type")})}catch(t){}}})),t=[...new Map(t.map((t=>[JSON.stringify(t),t]))).values()],this.j(t,"preconnect")}async R(){this.lastBreath=Date.now(),this.P(this),this.F(this),this.q(),this.A(),this.I(),await this.U(this.delayedScripts.normal),await this.U(this.delayedScripts.defer),await this.U(this.delayedScripts.async);try{await this.W(),await this.H(this),await this.J()}catch(t){console.error(t)}window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this.everythingLoaded=!0,this.S().then((()=>{this.D()})),this.N()}A(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((t=>{t.hasAttribute("data-rocket-src")?t.hasAttribute("async")&&!1!==t.async?this.delayedScripts.async.push(t):t.hasAttribute("defer")&&!1!==t.defer||"module"===t.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(t):this.delayedScripts.normal.push(t):this.delayedScripts.normal.push(t)}))}async B(t){if(await this.G(),!0!==t.noModule||!("noModule"in HTMLScriptElement.prototype))return new Promise((e=>{let i;function o(){(i||t).setAttribute("data-rocket-status","executed"),e()}try{if(navigator.userAgent.indexOf("Firefox/")>0||""===navigator.vendor)i=document.createElement("script"),[...t.attributes].forEach((t=>{let e=t.nodeName;"type"!==e&&("data-rocket-type"===e&&(e="type"),"data-rocket-src"===e&&(e="src"),i.setAttribute(e,t.nodeValue))})),t.text&&(i.text=t.text),i.hasAttribute("src")?(i.addEventListener("load",o),i.addEventListener("error",(function(){i.setAttribute("data-rocket-status","failed"),e()})),setTimeout((()=>{i.isConnected||e()}),1)):(i.text=t.text,o()),t.parentNode.replaceChild(i,t);else{const i=t.getAttribute("data-rocket-type"),n=t.getAttribute("data-rocket-src");i?(t.type=i,t.removeAttribute("data-rocket-type")):t.removeAttribute("type"),t.addEventListener("load",o),t.addEventListener("error",(function(){t.setAttribute("data-rocket-status","failed"),e()})),n?(t.removeAttribute("data-rocket-src"),t.src=n):t.src="data:text/javascript;base64,"+window.btoa(unescape(encodeURIComponent(t.text)))}}catch(i){t.setAttribute("data-rocket-status","failed"),e()}}));t.setAttribute("data-rocket-status","skipped")}async U(t){const e=t.shift();return e&&e.isConnected?(await this.B(e),this.U(t)):Promise.resolve()}I(){this.j([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}j(t,e){var i=document.createDocumentFragment();t.forEach((t=>{const o=t.getAttribute&&t.getAttribute("data-rocket-src")||t.src;if(o){const n=document.createElement("link");n.href=o,n.rel=e,"preconnect"!==e&&(n.as="script"),t.getAttribute&&"module"===t.getAttribute("data-rocket-type")&&(n.crossOrigin=!0),t.crossOrigin&&(n.crossOrigin=t.crossOrigin),t.integrity&&(n.integrity=t.integrity),i.appendChild(n),this.trash.push(n)}})),document.head.appendChild(i)}P(t){let e={};function i(i,o){return e[o].eventsToRewrite.indexOf(i)>=0&&!t.everythingLoaded?"rocket-"+i:i}function o(t,o){!function(t){e[t]||(e[t]={originalFunctions:{add:t.addEventListener,remove:t.removeEventListener},eventsToRewrite:[]},t.addEventListener=function(){arguments[0]=i(arguments[0],t),e[t].originalFunctions.add.apply(t,arguments)},t.removeEventListener=function(){arguments[0]=i(arguments[0],t),e[t].originalFunctions.remove.apply(t,arguments)})}(t),e[t].eventsToRewrite.push(o)}function n(e,i){let o=e[i];e[i]=null,Object.defineProperty(e,i,{get:()=>o||function(){},set(n){t.everythingLoaded?o=n:e["rocket"+i]=o=n}})}o(document,"DOMContentLoaded"),o(window,"DOMContentLoaded"),o(window,"load"),o(window,"pageshow"),o(document,"readystatechange"),n(document,"onreadystatechange"),n(window,"onload"),n(window,"onpageshow")}F(t){let e;function i(e){return t.everythingLoaded?e:e.split(" ").map((t=>"load"===t||0===t.indexOf("load.")?"rocket-jquery-load":t)).join(" ")}function o(o){if(o&&o.fn&&!t.allJQueries.includes(o)){o.fn.ready=o.fn.init.prototype.ready=function(e){return t.domReadyFired?e.bind(document)(o):document.addEventListener("rocket-DOMContentLoaded",(()=>e.bind(document)(o))),o([])};const e=o.fn.on;o.fn.on=o.fn.init.prototype.on=function(){return this[0]===window&&("string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=i(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach((t=>{const e=arguments[0][t];delete arguments[0][t],arguments[0][i(t)]=e}))),e.apply(this,arguments),this},t.allJQueries.push(o)}e=o}o(window.jQuery),Object.defineProperty(window,"jQuery",{get:()=>e,set(t){o(t)}})}async H(t){const e=document.querySelector("script[data-webpack]");e&&(await async function(){return new Promise((t=>{e.addEventListener("load",t),e.addEventListener("error",t)}))}(),await t.K(),await t.H(t))}async W(){this.domReadyFired=!0,await this.G(),document.dispatchEvent(new Event("rocket-readystatechange")),await this.G(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.G(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this.G(),window.dispatchEvent(new Event("rocket-DOMContentLoaded"))}async J(){await this.G(),document.dispatchEvent(new Event("rocket-readystatechange")),await this.G(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.G(),window.dispatchEvent(new Event("rocket-load")),await this.G(),window.rocketonload&&window.rocketonload(),await this.G(),this.allJQueries.forEach((t=>t(window).trigger("rocket-jquery-load"))),await this.G();const t=new Event("rocket-pageshow");t.persisted=this.persisted,window.dispatchEvent(t),await this.G(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted}),this.windowLoaded=!0}m(){document.onreadystatechange&&document.onreadystatechange(),window.onload&&window.onload(),window.onpageshow&&window.onpageshow({persisted:this.persisted})}q(){const t=new Map;document.write=document.writeln=function(e){const i=document.currentScript;i||console.error("WPRocket unable to document.write this: "+e);const o=document.createRange(),n=i.parentElement;let s=t.get(i);void 0===s&&(s=i.nextSibling,t.set(i,s));const c=document.createDocumentFragment();o.setStart(c,0),c.appendChild(o.createContextualFragment(e)),n.insertBefore(c,s)}}async G(){Date.now()-this.lastBreath>45&&(await this.K(),this.lastBreath=Date.now())}async K(){return document.hidden?new Promise((t=>setTimeout(t))):new Promise((t=>requestAnimationFrame(t)))}N(){this.trash.forEach((t=>t.remove()))}static run(){const t=new RocketLazyLoadScripts;t.k(t)}}RocketLazyLoadScripts.run()})();</script>
+	
+		<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v22.4 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>REGENERE K2 - regenere.site</title><link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto%20Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CLato%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CMontserrat%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CNunito%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto%20Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CLato%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CMontserrat%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CNunito%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap" media="print" onload="this.media='all'" /><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto%20Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CLato%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CMontserrat%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CNunito%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap" /></noscript>
+	<meta name="description" content="Regenere k2 Resveratrol Trans Oficial direto da Fabrica" />
+	<link rel="canonical" href="https://regenere.site/" />
+	<meta property="og:locale" content="pt_BR" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="REGENERE K2 - regenere.site" />
+	<meta property="og:description" content="Regenere k2 Resveratrol Trans Oficial direto da Fabrica" />
+	<meta property="og:url" content="https://regenere.site/" />
+	<meta property="og:site_name" content="regenere.site" />
+	<meta property="article:modified_time" content="2024-06-08T22:41:50+00:00" />
+	<meta property="og:image" content="https://regenere.site/wp-content/uploads/2023/03/Logo-3-1-2.png" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://regenere.site/","url":"https://regenere.site/","name":"REGENERE K2 - regenere.site","isPartOf":{"@id":"https://regenere.site/#website"},"primaryImageOfPage":{"@id":"https://regenere.site/#primaryimage"},"image":{"@id":"https://regenere.site/#primaryimage"},"thumbnailUrl":"https://regenere.site/wp-content/uploads/2023/03/Logo-3-1-2.png","datePublished":"2023-03-15T18:47:34+00:00","dateModified":"2024-06-08T22:41:50+00:00","description":"Regenere k2 Resveratrol Trans Oficial direto da Fabrica","breadcrumb":{"@id":"https://regenere.site/#breadcrumb"},"inLanguage":"pt-BR","potentialAction":[{"@type":"ReadAction","target":["https://regenere.site/"]}]},{"@type":"ImageObject","inLanguage":"pt-BR","@id":"https://regenere.site/#primaryimage","url":"https://regenere.site/wp-content/uploads/2023/03/Logo-3-1-2.png","contentUrl":"https://regenere.site/wp-content/uploads/2023/03/Logo-3-1-2.png","width":857,"height":153},{"@type":"BreadcrumbList","@id":"https://regenere.site/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Início"}]},{"@type":"WebSite","@id":"https://regenere.site/#website","url":"https://regenere.site/","name":"regenere.site","description":"","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://regenere.site/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"pt-BR"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+<link rel="alternate" type="application/rss+xml" title="Feed para regenere.site &raquo;" href="https://regenere.site/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Feed de comentários para regenere.site &raquo;" href="https://regenere.site/comments/feed/" />
+<style id='wp-emoji-styles-inline-css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<style id='classic-theme-styles-inline-css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='pafe-extension-style-free-css' href='https://regenere.site/wp-content/plugins/piotnet-addons-for-elementor/assets/css/minify/extension.min.css?ver=2.4.26' media='all' />
+<link rel='stylesheet' id='hello-elementor-css' href='https://regenere.site/wp-content/themes/hello-elementor/style.min.css?ver=2.6.1' media='all' />
+<link rel='stylesheet' id='hello-elementor-theme-style-css' href='https://regenere.site/wp-content/themes/hello-elementor/theme.min.css?ver=2.6.1' media='all' />
+<link rel='stylesheet' id='elementor-frontend-css' href='https://regenere.site/wp-content/plugins/elementor/assets/css/frontend-lite.min.css?ver=3.20.3' media='all' />
+<link rel='stylesheet' id='elementor-post-6-css' href='https://regenere.site/wp-content/uploads/elementor/css/post-6.css?ver=1712583897' media='all' />
+<link data-minify="1" rel='stylesheet' id='elementor-icons-css' href='https://regenere.site/wp-content/cache/min/1/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=1717699787' media='all' />
+<link data-minify="1" rel='stylesheet' id='swiper-css' href='https://regenere.site/wp-content/cache/min/1/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css?ver=1717699787' media='all' />
+<link rel='stylesheet' id='elementor-pro-css' href='https://regenere.site/wp-content/plugins/elementor-pro/assets/css/frontend-lite.min.css?ver=3.20.2' media='all' />
+<link rel='stylesheet' id='elementor-global-css' href='https://regenere.site/wp-content/uploads/elementor/css/global.css?ver=1712583935' media='all' />
+<link rel='stylesheet' id='elementor-post-895-css' href='https://regenere.site/wp-content/uploads/elementor/css/post-895.css?ver=1717886594' media='all' />
+<style id='rocket-lazyload-inline-css'>
+.rll-youtube-player{position:relative;padding-bottom:56.23%;height:0;overflow:hidden;max-width:100%;}.rll-youtube-player:focus-within{outline: 2px solid currentColor;outline-offset: 5px;}.rll-youtube-player iframe{position:absolute;top:0;left:0;width:100%;height:100%;z-index:100;background:0 0}.rll-youtube-player img{bottom:0;display:block;left:0;margin:auto;max-width:100%;width:100%;position:absolute;right:0;top:0;border:none;height:auto;-webkit-transition:.4s all;-moz-transition:.4s all;transition:.4s all}.rll-youtube-player img:hover{-webkit-filter:brightness(75%)}.rll-youtube-player .play{height:100%;width:100%;left:0;top:0;position:absolute;background:url(https://regenere.site/wp-content/plugins/wp-rocket/assets/img/youtube.png) no-repeat center;background-color: transparent !important;cursor:pointer;border:none;}
+</style>
+
+<link rel='stylesheet' id='elementor-icons-shared-0-css' href='https://regenere.site/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css?ver=5.15.3' media='all' />
+<link data-minify="1" rel='stylesheet' id='elementor-icons-fa-solid-css' href='https://regenere.site/wp-content/cache/min/1/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min.css?ver=1717699787' media='all' />
+<link data-minify="1" rel='stylesheet' id='elementor-icons-fa-brands-css' href='https://regenere.site/wp-content/cache/min/1/wp-content/plugins/elementor/assets/lib/font-awesome/css/brands.min.css?ver=1717699787' media='all' />
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin><script type="rocketlazyloadscript" data-rocket-src="https://regenere.site/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js" defer></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://regenere.site/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js" defer></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://regenere.site/wp-content/plugins/piotnet-addons-for-elementor/assets/js/minify/extension.min.js?ver=2.4.26" id="pafe-extension-free-js" defer></script>
+<link rel="https://api.w.org/" href="https://regenere.site/wp-json/" /><link rel="alternate" type="application/json" href="https://regenere.site/wp-json/wp/v2/pages/895" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://regenere.site/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.5.4" />
+<link rel='shortlink' href='https://regenere.site/' />
+<link rel="alternate" type="application/json+oembed" href="https://regenere.site/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fregenere.site%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://regenere.site/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fregenere.site%2F&#038;format=xml" />
+<meta name="generator" content="Elementor 3.20.3; features: e_optimized_assets_loading, e_optimized_css_loading, additional_custom_breakpoints, block_editor_assets_optimize, e_image_loading_optimization; settings: css_print_method-external, google_font-enabled, font_display-swap">
+<link rel="icon" href="https://regenere.site/wp-content/uploads/2023/05/cropped-Logo-3-1-2.png-32x32.webp" sizes="32x32" />
+<link rel="icon" href="https://regenere.site/wp-content/uploads/2023/05/cropped-Logo-3-1-2.png-192x192.webp" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://regenere.site/wp-content/uploads/2023/05/cropped-Logo-3-1-2.png-180x180.webp" />
+<meta name="msapplication-TileImage" content="https://regenere.site/wp-content/uploads/2023/05/cropped-Logo-3-1-2.png-270x270.webp" />
+		<style id="wp-custom-css">
+			html, body{
+    overflow-x: hidden !important; 
+}		</style>
+		<noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript>	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" /></head>
+<body class="home page-template page-template-elementor_canvas page page-id-895 elementor-default elementor-template-canvas elementor-kit-6 elementor-page elementor-page-895">
+			<div data-elementor-type="wp-post" data-elementor-id="895" class="elementor elementor-895" data-elementor-post-type="page">
+						<section class="elementor-section elementor-top-section elementor-element elementor-element-49552e19 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="49552e19" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-4473ce60" data-id="4473ce60" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-2a9fb524 elementor-widget elementor-widget-image" data-id="2a9fb524" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.20.0 - 26-03-2024 */
+.elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style>										<img fetchpriority="high" decoding="async" width="800" height="143" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20800%20143'%3E%3C/svg%3E" class="attachment-large size-large wp-image-662" alt="" data-lazy-srcset="https://regenere.site/wp-content/uploads/2023/03/Logo-3-1-2.png 857w,   https://regenere.site/wp-content/uploads/2023/03/Logo-3-1-2-300x54.png 300w,   https://regenere.site/wp-content/uploads/2023/03/Logo-3-1-2-768x137.png 768w" data-lazy-sizes="(max-width: 800px) 100vw, 800px" data-lazy-src="https://regenere.site/wp-content/uploads/2023/03/Logo-3-1-2.png" /><noscript><img fetchpriority="high" decoding="async" width="800" height="143" src="https://regenere.site/wp-content/uploads/2023/03/Logo-3-1-2.png" class="attachment-large size-large wp-image-662" alt="" srcset="https://regenere.site/wp-content/uploads/2023/03/Logo-3-1-2.png 857w,   https://regenere.site/wp-content/uploads/2023/03/Logo-3-1-2-300x54.png 300w,   https://regenere.site/wp-content/uploads/2023/03/Logo-3-1-2-768x137.png 768w" sizes="(max-width: 800px) 100vw, 800px" /></noscript>													</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-bfea677 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="bfea677" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;,&quot;shape_divider_bottom&quot;:&quot;mountains&quot;}">
+					<div class="elementor-shape elementor-shape-bottom" data-negative="false">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+	<path class="elementor-shape-fill" opacity="0.33" d="M473,67.3c-203.9,88.3-263.1-34-320.3,0C66,119.1,0,59.7,0,59.7V0h1000v59.7 c0,0-62.1,26.1-94.9,29.3c-32.8,3.3-62.8-12.3-75.8-22.1C806,49.6,745.3,8.7,694.9,4.7S492.4,59,473,67.3z"/>
+	<path class="elementor-shape-fill" opacity="0.66" d="M734,67.3c-45.5,0-77.2-23.2-129.1-39.1c-28.6-8.7-150.3-10.1-254,39.1 s-91.7-34.4-149.2,0C115.7,118.3,0,39.8,0,39.8V0h1000v36.5c0,0-28.2-18.5-92.1-18.5C810.2,18.1,775.7,67.3,734,67.3z"/>
+	<path class="elementor-shape-fill" d="M766.1,28.9c-200-57.5-266,65.5-395.1,19.5C242,1.8,242,5.4,184.8,20.6C128,35.8,132.3,44.9,89.9,52.5C28.6,63.7,0,0,0,0 h1000c0,0-9.9,40.9-83.6,48.1S829.6,47,766.1,28.9z"/>
+</svg>		</div>
+					<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-95b4c72" data-id="95b4c72" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-527fbb0 elementor-widget elementor-widget-html" data-id="527fbb0" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+			<!-- Meta Pixel Code -->
+<script type="rocketlazyloadscript">
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1253755925229630');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1253755925229630&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->		</div>
+				</div>
+				<div class="elementor-element elementor-element-1338eff5 elementor-widget elementor-widget-spacer" data-id="1338eff5" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.20.0 - 26-03-2024 */
+.elementor-column .elementor-spacer-inner{height:var(--spacer-size)}.e-con{--container-widget-width:100%}.e-con-inner>.elementor-widget-spacer,.e-con>.elementor-widget-spacer{width:var(--container-widget-width,var(--spacer-size));--align-self:var(--container-widget-align-self,initial);--flex-shrink:0}.e-con-inner>.elementor-widget-spacer>.elementor-widget-container,.e-con>.elementor-widget-spacer>.elementor-widget-container{height:100%;width:100%}.e-con-inner>.elementor-widget-spacer>.elementor-widget-container>.elementor-spacer,.e-con>.elementor-widget-spacer>.elementor-widget-container>.elementor-spacer{height:100%}.e-con-inner>.elementor-widget-spacer>.elementor-widget-container>.elementor-spacer>.elementor-spacer-inner,.e-con>.elementor-widget-spacer>.elementor-widget-container>.elementor-spacer>.elementor-spacer-inner{height:var(--container-widget-height,var(--spacer-size))}.e-con-inner>.elementor-widget-spacer.elementor-widget-empty,.e-con>.elementor-widget-spacer.elementor-widget-empty{position:relative;min-height:22px;min-width:22px}.e-con-inner>.elementor-widget-spacer.elementor-widget-empty .elementor-widget-empty-icon,.e-con>.elementor-widget-spacer.elementor-widget-empty .elementor-widget-empty-icon{position:absolute;top:0;bottom:0;left:0;right:0;margin:auto;padding:0;width:22px;height:22px}</style>		<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-67c7eedf elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="67c7eedf" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-13b3c252" data-id="13b3c252" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-6ffac7e1 elementor-widget elementor-widget-heading" data-id="6ffac7e1" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.20.0 - 26-03-2024 */
+.elementor-heading-title{padding:0;margin:0;line-height:1}.elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a{color:inherit;font-size:inherit;line-height:inherit}.elementor-widget-heading .elementor-heading-title.elementor-size-small{font-size:15px}.elementor-widget-heading .elementor-heading-title.elementor-size-medium{font-size:19px}.elementor-widget-heading .elementor-heading-title.elementor-size-large{font-size:29px}.elementor-widget-heading .elementor-heading-title.elementor-size-xl{font-size:39px}.elementor-widget-heading .elementor-heading-title.elementor-size-xxl{font-size:59px}</style><h2 class="elementor-heading-title elementor-size-default">Descubra o poder da <u>Vitamina K2</u> combinada com o <b><u>TransResveratrol</u>!</b></h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-1d79a3f elementor-widget elementor-widget-spacer" data-id="1d79a3f" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-738d2069 elementor-widget elementor-widget-heading" data-id="738d2069" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">A tecnologia <b><u>AMERICANA</u></b> que devolve a beleza da sua pele!</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-7bc7a4a elementor-widget elementor-widget-spacer" data-id="7bc7a4a" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-750fd40 elementor-align-left elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="750fd40" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+			<link rel="stylesheet" href="https://regenere.site/wp-content/plugins/elementor/assets/css/widget-icon-list.min.css">		<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-check-circle"></i>						</span>
+										<span class="elementor-icon-list-text">Vitamina K2 + TransResveratrol + Ácido Hialurônico + Verisol + Retinol</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-check-circle"></i>						</span>
+										<span class="elementor-icon-list-text">Hidratação 24 horas</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-check-circle"></i>						</span>
+										<span class="elementor-icon-list-text">Clareador de Manchas</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-check-circle"></i>						</span>
+										<span class="elementor-icon-list-text">Clareia e Uniformiza a Pele</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-check-circle"></i>						</span>
+										<span class="elementor-icon-list-text">Prolonga sua Expectativa de Vida​</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-check-circle"></i>						</span>
+										<span class="elementor-icon-list-text">Elimina o “Pé de Galinha” e “Bigode Chinês”</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-check-circle"></i>						</span>
+										<span class="elementor-icon-list-text">Devolve a Firmeza e Elasticidade a sua Pele</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-check-circle"></i>						</span>
+										<span class="elementor-icon-list-text">Inibe os hormônios do envelhecimento​</span>
+									</li>
+						</ul>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-11f857c5 elementor-widget elementor-widget-spacer" data-id="11f857c5" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-76dcbb3c" data-id="76dcbb3c" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-128d259f elementor-widget elementor-widget-image" data-id="128d259f" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img decoding="async" width="800" height="800" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20800%20800'%3E%3C/svg%3E" class="attachment-large size-large wp-image-675" alt="" data-lazy-srcset="https://regenere.site/wp-content/uploads/2023/03/Design-sem-nome-15-1-1.png 1024w,   https://regenere.site/wp-content/uploads/2023/03/Design-sem-nome-15-1-1-300x300.png 300w,   https://regenere.site/wp-content/uploads/2023/03/Design-sem-nome-15-1-1-150x150.png 150w,   https://regenere.site/wp-content/uploads/2023/03/Design-sem-nome-15-1-1-768x768.png 768w" data-lazy-sizes="(max-width: 800px) 100vw, 800px" data-lazy-src="https://regenere.site/wp-content/uploads/2023/03/Design-sem-nome-15-1-1.png" /><noscript><img decoding="async" width="800" height="800" src="https://regenere.site/wp-content/uploads/2023/03/Design-sem-nome-15-1-1.png" class="attachment-large size-large wp-image-675" alt="" srcset="https://regenere.site/wp-content/uploads/2023/03/Design-sem-nome-15-1-1.png 1024w,   https://regenere.site/wp-content/uploads/2023/03/Design-sem-nome-15-1-1-300x300.png 300w,   https://regenere.site/wp-content/uploads/2023/03/Design-sem-nome-15-1-1-150x150.png 150w,   https://regenere.site/wp-content/uploads/2023/03/Design-sem-nome-15-1-1-768x768.png 768w" sizes="(max-width: 800px) 100vw, 800px" /></noscript>													</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<div class="elementor-element elementor-element-2c86b4bb elementor-align-center elementor-tablet-align-left elementor-widget elementor-widget-button" data-id="2c86b4bb" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a class="elementor-button elementor-button-link elementor-size-sm" href="#preco">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon elementor-align-icon-left">
+				<i aria-hidden="true" class="fas fa-heart"></i>			</span>
+						<span class="elementor-button-text">EU QUERO RESTAURAR A MINHA PELE</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-5f79c9a1 elementor-align-center elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="5f79c9a1" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+					<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-lock"></i>						</span>
+										<span class="elementor-icon-list-text"> Compra 100% Segura e Satisfação Garantida!</span>
+									</li>
+						</ul>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-24c7616a elementor-widget elementor-widget-spacer" data-id="24c7616a" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-104dde1e elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="104dde1e" data-element_type="section" data-settings="{&quot;shape_divider_bottom_negative&quot;:&quot;yes&quot;,&quot;shape_divider_bottom&quot;:&quot;triangle-asymmetrical&quot;}">
+					<div class="elementor-shape elementor-shape-bottom" data-negative="true">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+	<path class="elementor-shape-fill" d="M737.9,94.7L0,0v100h1000V0L737.9,94.7z"/>
+</svg>		</div>
+					<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-6edfb251" data-id="6edfb251" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-66a4ba6b elementor-widget elementor-widget-spacer" data-id="66a4ba6b" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-4d063f9c elementor-widget elementor-widget-image" data-id="4d063f9c" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img decoding="async" width="800" height="163" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20800%20163'%3E%3C/svg%3E" class="attachment-large size-large wp-image-688" alt="" data-lazy-srcset="https://regenere.site/wp-content/uploads/2023/03/img1-2-1024x209.jpg 1024w,   https://regenere.site/wp-content/uploads/2023/03/img1-2-300x61.jpg 300w,   https://regenere.site/wp-content/uploads/2023/03/img1-2-768x157.jpg 768w,   https://regenere.site/wp-content/uploads/2023/03/img1-2.jpg 1348w" data-lazy-sizes="(max-width: 800px) 100vw, 800px" data-lazy-src="https://regenere.site/wp-content/uploads/2023/03/img1-2-1024x209.jpg" /><noscript><img loading="lazy" decoding="async" width="800" height="163" src="https://regenere.site/wp-content/uploads/2023/03/img1-2-1024x209.jpg" class="attachment-large size-large wp-image-688" alt="" srcset="https://regenere.site/wp-content/uploads/2023/03/img1-2-1024x209.jpg 1024w,   https://regenere.site/wp-content/uploads/2023/03/img1-2-300x61.jpg 300w,   https://regenere.site/wp-content/uploads/2023/03/img1-2-768x157.jpg 768w,   https://regenere.site/wp-content/uploads/2023/03/img1-2.jpg 1348w" sizes="(max-width: 800px) 100vw, 800px" /></noscript>													</div>
+				</div>
+				<div class="elementor-element elementor-element-5afb3c09 elementor-widget elementor-widget-heading" data-id="5afb3c09" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">VEJA o poder do <b><u>REGENERE</u>.</b></h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-7c54c885 elementor-widget elementor-widget-heading" data-id="7c54c885" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h1 class="elementor-heading-title elementor-size-default">Um produto rico em vitaminas que traz maciez, firmeza, rejuvenescimento e hidratação profunda!</h1>		</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-2d52ae30 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="2d52ae30" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-142b6f79" data-id="142b6f79" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-467c3f8e elementor-widget elementor-widget-image" data-id="467c3f8e" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img decoding="async" width="512" height="512" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20512%20512'%3E%3C/svg%3E" class="attachment-large size-large wp-image-692" alt="" data-lazy-srcset="https://regenere.site/wp-content/uploads/2023/03/6408451-1.png 512w,   https://regenere.site/wp-content/uploads/2023/03/6408451-1-300x300.png 300w,   https://regenere.site/wp-content/uploads/2023/03/6408451-1-150x150.png 150w" data-lazy-sizes="(max-width: 512px) 100vw, 512px" data-lazy-src="https://regenere.site/wp-content/uploads/2023/03/6408451-1.png" /><noscript><img loading="lazy" decoding="async" width="512" height="512" src="https://regenere.site/wp-content/uploads/2023/03/6408451-1.png" class="attachment-large size-large wp-image-692" alt="" srcset="https://regenere.site/wp-content/uploads/2023/03/6408451-1.png 512w,   https://regenere.site/wp-content/uploads/2023/03/6408451-1-300x300.png 300w,   https://regenere.site/wp-content/uploads/2023/03/6408451-1-150x150.png 150w" sizes="(max-width: 512px) 100vw, 512px" /></noscript>													</div>
+				</div>
+				<div class="elementor-element elementor-element-4c4fd7cb elementor-widget elementor-widget-heading" data-id="4c4fd7cb" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">REVERTE O ENVELHECIMENTO DA PELE</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-716a298e elementor-widget elementor-widget-text-editor" data-id="716a298e" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.20.0 - 26-03-2024 */
+.elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:#69727d;color:#fff}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap{color:#69727d;border:3px solid;background-color:transparent}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap{margin-top:8px}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter{width:1em;height:1em}.elementor-widget-text-editor .elementor-drop-cap{float:left;text-align:center;line-height:1;font-size:50px}.elementor-widget-text-editor .elementor-drop-cap-letter{display:inline-block}</style>				<p>A pele envelhece ao longo do tempo e por isso entre as vitaminas do <span style="font-weight: bold;"><u>REGENERE</u> </span>temos a Vitamina K2, Resveratrol e Verisol, importantes para diminuição dos radicais livres que ocasionam o envelhecimento.</p>						</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-3ac1f13c" data-id="3ac1f13c" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-38d29165 elementor-widget elementor-widget-image" data-id="38d29165" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img decoding="async" width="150" height="150" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20150%20150'%3E%3C/svg%3E" class="attachment-large size-large wp-image-697" alt="" data-lazy-src="https://regenere.site/wp-content/uploads/2023/03/poder-icon2-1-1-1.jpg" /><noscript><img loading="lazy" decoding="async" width="150" height="150" src="https://regenere.site/wp-content/uploads/2023/03/poder-icon2-1-1-1.jpg" class="attachment-large size-large wp-image-697" alt="" /></noscript>													</div>
+				</div>
+				<div class="elementor-element elementor-element-3336a852 elementor-widget elementor-widget-heading" data-id="3336a852" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">FIRMA A PELE FLÁCIDA</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-2225fb4d elementor-widget elementor-widget-text-editor" data-id="2225fb4d" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>O <b><u>REGENERE</u></b> possui o famoso colágeno VERISOL®, único comprovadamente capaz de agir exclusivamente na pele, proporcionando uma pele mais firme e sem marcas do tempo.</p>						</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-7d6bfa47" data-id="7d6bfa47" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-44148486 elementor-widget elementor-widget-image" data-id="44148486" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img decoding="async" width="512" height="512" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20512%20512'%3E%3C/svg%3E" class="attachment-large size-large wp-image-702" alt="" data-lazy-srcset="https://regenere.site/wp-content/uploads/2023/03/7305214.png 512w,   https://regenere.site/wp-content/uploads/2023/03/7305214-300x300.png 300w,   https://regenere.site/wp-content/uploads/2023/03/7305214-150x150.png 150w" data-lazy-sizes="(max-width: 512px) 100vw, 512px" data-lazy-src="https://regenere.site/wp-content/uploads/2023/03/7305214.png" /><noscript><img loading="lazy" decoding="async" width="512" height="512" src="https://regenere.site/wp-content/uploads/2023/03/7305214.png" class="attachment-large size-large wp-image-702" alt="" srcset="https://regenere.site/wp-content/uploads/2023/03/7305214.png 512w,   https://regenere.site/wp-content/uploads/2023/03/7305214-300x300.png 300w,   https://regenere.site/wp-content/uploads/2023/03/7305214-150x150.png 150w" sizes="(max-width: 512px) 100vw, 512px" /></noscript>													</div>
+				</div>
+				<div class="elementor-element elementor-element-5993bf4e elementor-widget elementor-widget-heading" data-id="5993bf4e" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">PROTEJE SUA PELE E SEU ORGANISMO</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-42d184d5 elementor-widget elementor-widget-text-editor" data-id="42d184d5" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							Pesquisas apontam que o resveratrol é um nutriente pró-longevidade. Ele Protege sua pele contra radicais livres, é Cárdioprotetor e Neuroprotetor, ou seja, previne doenças do coração, neurológicas e também proteje as células do corpo contra Câncer.						</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-38289794 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="38289794" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-1b167d40" data-id="1b167d40" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-20205503 elementor-widget elementor-widget-image" data-id="20205503" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img decoding="async" width="512" height="512" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20512%20512'%3E%3C/svg%3E" class="attachment-large size-large wp-image-709" alt="" data-lazy-srcset="https://regenere.site/wp-content/uploads/2023/03/4300658-1.png 512w,   https://regenere.site/wp-content/uploads/2023/03/4300658-1-300x300.png 300w,   https://regenere.site/wp-content/uploads/2023/03/4300658-1-150x150.png 150w" data-lazy-sizes="(max-width: 512px) 100vw, 512px" data-lazy-src="https://regenere.site/wp-content/uploads/2023/03/4300658-1.png" /><noscript><img loading="lazy" decoding="async" width="512" height="512" src="https://regenere.site/wp-content/uploads/2023/03/4300658-1.png" class="attachment-large size-large wp-image-709" alt="" srcset="https://regenere.site/wp-content/uploads/2023/03/4300658-1.png 512w,   https://regenere.site/wp-content/uploads/2023/03/4300658-1-300x300.png 300w,   https://regenere.site/wp-content/uploads/2023/03/4300658-1-150x150.png 150w" sizes="(max-width: 512px) 100vw, 512px" /></noscript>													</div>
+				</div>
+				<div class="elementor-element elementor-element-35adaa38 elementor-widget elementor-widget-heading" data-id="35adaa38" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">COMBATE RUGAS E BIGODE CHINÊS</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-737f1a48 elementor-widget elementor-widget-text-editor" data-id="737f1a48" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>O <span style="font-weight: bold;"><u>REGENERE</u></span> possui exclusivo sistema PROSIM3D® que combina Vitamina K2 com Resveratrol + Ácido Hialurônico + Verisol, tecnologia que diminue a aparência das rugas deixando a pele do seu rosto mais lisa e sem as marcas do tempo.</p>						</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-c422fff" data-id="c422fff" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-7192147 elementor-widget elementor-widget-image" data-id="7192147" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img decoding="async" width="512" height="512" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20512%20512'%3E%3C/svg%3E" class="attachment-large size-large wp-image-714" alt="" data-lazy-srcset="https://regenere.site/wp-content/uploads/2023/03/3799720-1.png 512w,   https://regenere.site/wp-content/uploads/2023/03/3799720-1-300x300.png 300w,   https://regenere.site/wp-content/uploads/2023/03/3799720-1-150x150.png 150w" data-lazy-sizes="(max-width: 512px) 100vw, 512px" data-lazy-src="https://regenere.site/wp-content/uploads/2023/03/3799720-1.png" /><noscript><img loading="lazy" decoding="async" width="512" height="512" src="https://regenere.site/wp-content/uploads/2023/03/3799720-1.png" class="attachment-large size-large wp-image-714" alt="" srcset="https://regenere.site/wp-content/uploads/2023/03/3799720-1.png 512w,   https://regenere.site/wp-content/uploads/2023/03/3799720-1-300x300.png 300w,   https://regenere.site/wp-content/uploads/2023/03/3799720-1-150x150.png 150w" sizes="(max-width: 512px) 100vw, 512px" /></noscript>													</div>
+				</div>
+				<div class="elementor-element elementor-element-6c45ac7a elementor-widget elementor-widget-heading" data-id="6c45ac7a" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">REJUVENESCE SEU ORGANISMO</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-11379fbb elementor-widget elementor-widget-text-editor" data-id="11379fbb" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Graças a Vitamina K2 combinada ao Ácido Hialurônico que traz moléculas de água para células da derme, <u><b>REGENERE</b></u> age como preenchedor e suaviza rejuvenesce todo seu organismo.</p>						</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-70c2bcfb" data-id="70c2bcfb" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-136f1b52 elementor-widget elementor-widget-image" data-id="136f1b52" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img decoding="async" width="512" height="512" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20512%20512'%3E%3C/svg%3E" class="attachment-large size-large wp-image-719" alt="" data-lazy-srcset="https://regenere.site/wp-content/uploads/2023/03/4853254-1.png 512w,   https://regenere.site/wp-content/uploads/2023/03/4853254-1-300x300.png 300w,   https://regenere.site/wp-content/uploads/2023/03/4853254-1-150x150.png 150w" data-lazy-sizes="(max-width: 512px) 100vw, 512px" data-lazy-src="https://regenere.site/wp-content/uploads/2023/03/4853254-1.png" /><noscript><img loading="lazy" decoding="async" width="512" height="512" src="https://regenere.site/wp-content/uploads/2023/03/4853254-1.png" class="attachment-large size-large wp-image-719" alt="" srcset="https://regenere.site/wp-content/uploads/2023/03/4853254-1.png 512w,   https://regenere.site/wp-content/uploads/2023/03/4853254-1-300x300.png 300w,   https://regenere.site/wp-content/uploads/2023/03/4853254-1-150x150.png 150w" sizes="(max-width: 512px) 100vw, 512px" /></noscript>													</div>
+				</div>
+				<div class="elementor-element elementor-element-3811ae1f elementor-widget elementor-widget-heading" data-id="3811ae1f" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">ANTIOXIDANTE E COMBATE OS RADICAIS LIVRES</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-17463cc2 elementor-widget elementor-widget-text-editor" data-id="17463cc2" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							Volte a ostentar uma pele Jovem, livre dos efeitos de radicais livre e do envelhecimento!						</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<div class="elementor-element elementor-element-4b382b1a elementor-widget elementor-widget-spacer" data-id="4b382b1a" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-4172d7a0 elementor-widget elementor-widget-spacer" data-id="4172d7a0" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-412fa4e8 elementor-align-center elementor-tablet-align-center elementor-mobile-align-center elementor-widget elementor-widget-button" data-id="412fa4e8" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a class="elementor-button elementor-button-link elementor-size-sm" href="#preco">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon elementor-align-icon-left">
+				<i aria-hidden="true" class="fas fa-heart"></i>			</span>
+						<span class="elementor-button-text">EU QUERO RESTAURAR A MINHA PELE</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-78381304 elementor-widget elementor-widget-image" data-id="78381304" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img decoding="async" width="800" height="115" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20800%20115'%3E%3C/svg%3E" class="attachment-large size-large wp-image-729" alt="" data-lazy-srcset="https://regenere.site/wp-content/uploads/2023/03/barra-segura2-1-1-1-1024x147.png 1024w,   https://regenere.site/wp-content/uploads/2023/03/barra-segura2-1-1-1-300x43.png 300w,   https://regenere.site/wp-content/uploads/2023/03/barra-segura2-1-1-1-768x110.png 768w,   https://regenere.site/wp-content/uploads/2023/03/barra-segura2-1-1-1.png 1196w" data-lazy-sizes="(max-width: 800px) 100vw, 800px" data-lazy-src="https://regenere.site/wp-content/uploads/2023/03/barra-segura2-1-1-1-1024x147.png" /><noscript><img loading="lazy" decoding="async" width="800" height="115" src="https://regenere.site/wp-content/uploads/2023/03/barra-segura2-1-1-1-1024x147.png" class="attachment-large size-large wp-image-729" alt="" srcset="https://regenere.site/wp-content/uploads/2023/03/barra-segura2-1-1-1-1024x147.png 1024w,   https://regenere.site/wp-content/uploads/2023/03/barra-segura2-1-1-1-300x43.png 300w,   https://regenere.site/wp-content/uploads/2023/03/barra-segura2-1-1-1-768x110.png 768w,   https://regenere.site/wp-content/uploads/2023/03/barra-segura2-1-1-1.png 1196w" sizes="(max-width: 800px) 100vw, 800px" /></noscript>													</div>
+				</div>
+				<div class="elementor-element elementor-element-36c1f717 elementor-widget elementor-widget-spacer" data-id="36c1f717" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-5e4cb7b9 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="5e4cb7b9" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;,&quot;shape_divider_bottom&quot;:&quot;curve&quot;,&quot;shape_divider_bottom_negative&quot;:&quot;yes&quot;}">
+					<div class="elementor-shape elementor-shape-bottom" data-negative="true">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+	<path class="elementor-shape-fill" d="M500,97C126.7,96.3,0.8,19.8,0,0v100l1000,0V1C1000,19.4,873.3,97.8,500,97z"/>
+</svg>		</div>
+					<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-589d03ab" data-id="589d03ab" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-2e52feed elementor-widget elementor-widget-spacer" data-id="2e52feed" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-8e9f05f elementor-widget elementor-widget-heading" data-id="8e9f05f" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Renove a beleza da sua pele e recupere sua auto estima!
+</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-3e5df423 elementor-widget elementor-widget-heading" data-id="3e5df423" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h1 class="elementor-heading-title elementor-size-default">Você também merece ter uma <b>pele</b> <b>maravilhosa</b> todos os dias!
+</h1>		</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-7a55e1ad elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="7a55e1ad" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-4f76c354" data-id="4f76c354" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-91af852 elementor-widget elementor-widget-pafe-before-after-image-comparison-slider" data-id="91af852" data-element_type="widget" data-widget_type="pafe-before-after-image-comparison-slider.default">
+				<div class="elementor-widget-container">
+				
+			<div class="pafe-before-after-image-comparison-slider" data-pafe-before-after-image-comparison-slider data-pafe-before-after-image-offset-percent="0.5" data-pafe-before-after-image-orientation="horizontal" data-pafe-before-after-image-before-label="Before" data-pafe-before-after-image-after-label="After" data-pafe-before-after-image-overlay="yes" data-pafe-before-after-image-move-slider-on-hover="" data-pafe-before-after-image-move-with-handle-only="yes" data-pafe-before-after-image-click-to-move="">
+	            <img width="610" height="730" decoding="async" class="pafe-before-after-image-comparison-slider__item pafe-before-after-image-comparison-slider__item--before" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20610%20730'%3E%3C/svg%3E" data-lazy-src="https://regenere.site/wp-content/uploads/2023/03/antes.jpeg"><noscript><img width="610" height="730" decoding="async" class="pafe-before-after-image-comparison-slider__item pafe-before-after-image-comparison-slider__item--before" src="https://regenere.site/wp-content/uploads/2023/03/antes.jpeg"></noscript>
+	            <img width="600" height="719" decoding="async" class="pafe-before-after-image-comparison-slider__item pafe-before-after-image-comparison-slider__item--after" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20600%20719'%3E%3C/svg%3E" data-lazy-src="https://regenere.site/wp-content/uploads/2023/03/depois.jpeg"><noscript><img width="600" height="719" decoding="async" class="pafe-before-after-image-comparison-slider__item pafe-before-after-image-comparison-slider__item--after" src="https://regenere.site/wp-content/uploads/2023/03/depois.jpeg"></noscript>
+      		</div>
+        		</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-20eb48d6" data-id="20eb48d6" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-68ca0035 elementor-align-left elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="68ca0035" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+					<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-check-circle"></i>						</span>
+										<span class="elementor-icon-list-text"><b>Revitaliza a pele</b></span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-check-circle"></i>						</span>
+										<span class="elementor-icon-list-text"><b>Combate as rugas</b></span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-check-circle"></i>						</span>
+										<span class="elementor-icon-list-text"><b>Hidratação e sustentação</b></span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-check-circle"></i>						</span>
+										<span class="elementor-icon-list-text"><b>Ação preenchedora e anti-flacidez</b></span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-check-circle"></i>						</span>
+										<span class="elementor-icon-list-text"><b>Estimula a renovação diária da pele</b></span>
+									</li>
+						</ul>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<div class="elementor-element elementor-element-5089f29a elementor-widget elementor-widget-spacer" data-id="5089f29a" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-17bda684 elementor-align-center elementor-tablet-align-center elementor-mobile-align-center elementor-widget elementor-widget-button" data-id="17bda684" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a class="elementor-button elementor-button-link elementor-size-sm" href="#preco">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon elementor-align-icon-left">
+				<i aria-hidden="true" class="fas fa-check-double"></i>			</span>
+						<span class="elementor-button-text">EU QUERO RESTAURAR A MINHA PELE</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-346b651c elementor-align-center elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="346b651c" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+					<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-lock"></i>						</span>
+										<span class="elementor-icon-list-text"> Compra 100% Segura e Satisfação Garantida!</span>
+									</li>
+						</ul>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-6799fb5c elementor-widget elementor-widget-spacer" data-id="6799fb5c" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-6e09429c elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="6e09429c" data-element_type="section" data-settings="{&quot;shape_divider_bottom&quot;:&quot;curve&quot;,&quot;shape_divider_bottom_negative&quot;:&quot;yes&quot;}">
+					<div class="elementor-shape elementor-shape-bottom" data-negative="true">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+	<path class="elementor-shape-fill" d="M500,97C126.7,96.3,0.8,19.8,0,0v100l1000,0V1C1000,19.4,873.3,97.8,500,97z"/>
+</svg>		</div>
+					<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-7094c78c" data-id="7094c78c" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-2a5a7f17 elementor-widget elementor-widget-spacer" data-id="2a5a7f17" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-60aa5e74 elementor-widget elementor-widget-heading" data-id="60aa5e74" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Qual segredo da nossa fórmula?</h2>		</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-33b8e4d8 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="33b8e4d8" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-40afbd96" data-id="40afbd96" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-1f2026cc elementor-widget elementor-widget-image" data-id="1f2026cc" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img decoding="async" width="750" height="422" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20750%20422'%3E%3C/svg%3E" class="attachment-large size-large wp-image-755" alt="" data-lazy-srcset="https://regenere.site/wp-content/uploads/2023/03/img2-min-2.jpg 750w,   https://regenere.site/wp-content/uploads/2023/03/img2-min-2-300x169.jpg 300w" data-lazy-sizes="(max-width: 750px) 100vw, 750px" data-lazy-src="https://regenere.site/wp-content/uploads/2023/03/img2-min-2.jpg" /><noscript><img loading="lazy" decoding="async" width="750" height="422" src="https://regenere.site/wp-content/uploads/2023/03/img2-min-2.jpg" class="attachment-large size-large wp-image-755" alt="" srcset="https://regenere.site/wp-content/uploads/2023/03/img2-min-2.jpg 750w,   https://regenere.site/wp-content/uploads/2023/03/img2-min-2-300x169.jpg 300w" sizes="(max-width: 750px) 100vw, 750px" /></noscript>													</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-5af6113c" data-id="5af6113c" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-5a92b28a elementor-widget elementor-widget-text-editor" data-id="5a92b28a" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>A exclusiva tecnologia <b><u>AMERICANA</u></b> de aplicação sublingual proporciona uma absorção rápida e eficaz por meio da glândula que temos sob a língua, nela vasos que acessam diretamente a corrente sanguínea absorvem rapidamente seu conteúdo e promovem resultados surpreendentes em pouquíssimo tempo, essa é a forma mais eficaz, garantindo até 97% de absorção dos ativos da composição. Chegou o fim dos tratamentos invasivos, dolorosos e com resultado temporário!</p>						</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<div class="elementor-element elementor-element-5e8abf76 elementor-widget elementor-widget-spacer" data-id="5e8abf76" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-5c472d0d elementor-widget elementor-widget-heading" data-id="5c472d0d" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Desenvolvida e Recomendada por especialistas!</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-c44eec4 elementor-widget elementor-widget-text-editor" data-id="c44eec4" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>A fórmula do <b><u>REGENERE</u></b> contém uma exclusiva tecnologia premium e importada para aumentar a absorção do organismo aliada aos componentes premium do produto proporcionam um toque aveludado deixando sua pele mais lisa e revitalizada com uma mega hidratação 3D e resultados já nas primeiras semanas de uso.</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-6fa3e2d0 elementor-widget elementor-widget-spacer" data-id="6fa3e2d0" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-2f72bac9 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="2f72bac9" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-77d1cb0f" data-id="77d1cb0f" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-2153881b elementor-position-top elementor-widget elementor-widget-image-box" data-id="2153881b" data-element_type="widget" data-widget_type="image-box.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.20.0 - 26-03-2024 */
+.elementor-widget-image-box .elementor-image-box-content{width:100%}@media (min-width:768px){.elementor-widget-image-box.elementor-position-left .elementor-image-box-wrapper,.elementor-widget-image-box.elementor-position-right .elementor-image-box-wrapper{display:flex}.elementor-widget-image-box.elementor-position-right .elementor-image-box-wrapper{text-align:right;flex-direction:row-reverse}.elementor-widget-image-box.elementor-position-left .elementor-image-box-wrapper{text-align:left;flex-direction:row}.elementor-widget-image-box.elementor-position-top .elementor-image-box-img{margin:auto}.elementor-widget-image-box.elementor-vertical-align-top .elementor-image-box-wrapper{align-items:flex-start}.elementor-widget-image-box.elementor-vertical-align-middle .elementor-image-box-wrapper{align-items:center}.elementor-widget-image-box.elementor-vertical-align-bottom .elementor-image-box-wrapper{align-items:flex-end}}@media (max-width:767px){.elementor-widget-image-box .elementor-image-box-img{margin-left:auto!important;margin-right:auto!important;margin-bottom:15px}}.elementor-widget-image-box .elementor-image-box-img{display:inline-block}.elementor-widget-image-box .elementor-image-box-title a{color:inherit}.elementor-widget-image-box .elementor-image-box-wrapper{text-align:center}.elementor-widget-image-box .elementor-image-box-description{margin:0}</style><div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><img decoding="async" width="800" height="800" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20800%20800'%3E%3C/svg%3E" class="attachment-large size-large wp-image-766" alt="" data-lazy-srcset="https://regenere.site/wp-content/uploads/2023/03/Design-sem-nome-18-1.png 1024w,   https://regenere.site/wp-content/uploads/2023/03/Design-sem-nome-18-1-300x300.png 300w,   https://regenere.site/wp-content/uploads/2023/03/Design-sem-nome-18-1-150x150.png 150w,   https://regenere.site/wp-content/uploads/2023/03/Design-sem-nome-18-1-768x768.png 768w" data-lazy-sizes="(max-width: 800px) 100vw, 800px" data-lazy-src="https://regenere.site/wp-content/uploads/2023/03/Design-sem-nome-18-1.png" /><noscript><img loading="lazy" decoding="async" width="800" height="800" src="https://regenere.site/wp-content/uploads/2023/03/Design-sem-nome-18-1.png" class="attachment-large size-large wp-image-766" alt="" srcset="https://regenere.site/wp-content/uploads/2023/03/Design-sem-nome-18-1.png 1024w,   https://regenere.site/wp-content/uploads/2023/03/Design-sem-nome-18-1-300x300.png 300w,   https://regenere.site/wp-content/uploads/2023/03/Design-sem-nome-18-1-150x150.png 150w,   https://regenere.site/wp-content/uploads/2023/03/Design-sem-nome-18-1-768x768.png 768w" sizes="(max-width: 800px) 100vw, 800px" /></noscript></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">Vitamina K2</h3><p class="elementor-image-box-description">O principal ativo do <b><u>REGENERE</u></b> é conhecido por suas propriedades renovadoras e anti envelhecimento com um forte poder regenerador e fitoterápico
+
+</p></div></div>		</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-661bb4b8" data-id="661bb4b8" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-48a7a261 elementor-widget elementor-widget-image" data-id="48a7a261" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img decoding="async" width="227" height="222" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20227%20222'%3E%3C/svg%3E" class="attachment-large size-large wp-image-769" alt="" data-lazy-src="https://regenere.site/wp-content/uploads/2023/03/images-1.jpeg" /><noscript><img loading="lazy" decoding="async" width="227" height="222" src="https://regenere.site/wp-content/uploads/2023/03/images-1.jpeg" class="attachment-large size-large wp-image-769" alt="" /></noscript>													</div>
+				</div>
+				<div class="elementor-element elementor-element-1899e2f6 elementor-widget elementor-widget-heading" data-id="1899e2f6" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Resveratrol</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-31c7b091 elementor-widget elementor-widget-text-editor" data-id="31c7b091" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>O <b>Resveratrol</b> é um nutriente pró-longevidade. Vários estudos apontam que o <b>Resveratrol</b> aumenta sua expectativa de vida e promove uma pele mais jovem e saudável.</p>						</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-11091c3e" data-id="11091c3e" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-64a7bdb4 elementor-position-top elementor-widget elementor-widget-image-box" data-id="64a7bdb4" data-element_type="widget" data-widget_type="image-box.default">
+				<div class="elementor-widget-container">
+			<div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><img decoding="async" width="612" height="612" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20612%20612'%3E%3C/svg%3E" class="attachment-full size-full wp-image-774" alt="" data-lazy-srcset="https://regenere.site/wp-content/uploads/2023/03/istockphoto-1089102820-612x612-1-1.jpeg 612w,   https://regenere.site/wp-content/uploads/2023/03/istockphoto-1089102820-612x612-1-1-300x300.jpeg 300w,   https://regenere.site/wp-content/uploads/2023/03/istockphoto-1089102820-612x612-1-1-150x150.jpeg 150w" data-lazy-sizes="(max-width: 612px) 100vw, 612px" data-lazy-src="https://regenere.site/wp-content/uploads/2023/03/istockphoto-1089102820-612x612-1-1.jpeg" /><noscript><img loading="lazy" decoding="async" width="612" height="612" src="https://regenere.site/wp-content/uploads/2023/03/istockphoto-1089102820-612x612-1-1.jpeg" class="attachment-full size-full wp-image-774" alt="" srcset="https://regenere.site/wp-content/uploads/2023/03/istockphoto-1089102820-612x612-1-1.jpeg 612w,   https://regenere.site/wp-content/uploads/2023/03/istockphoto-1089102820-612x612-1-1-300x300.jpeg 300w,   https://regenere.site/wp-content/uploads/2023/03/istockphoto-1089102820-612x612-1-1-150x150.jpeg 150w" sizes="(max-width: 612px) 100vw, 612px" /></noscript></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">Ácido Hialurônico</h3><p class="elementor-image-box-description">Responsável por preencher os espaços que surgem entre a derme e a epiderme, ele garanta a <b>hidratação e uniformidade</b> à pele enquanto suaviza as rugas e marcas de expressão.</p></div></div>		</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-53bcbd81" data-id="53bcbd81" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-40b9ad9 elementor-position-top elementor-widget elementor-widget-image-box" data-id="40b9ad9" data-element_type="widget" data-widget_type="image-box.default">
+				<div class="elementor-widget-container">
+			<div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><img decoding="async" width="1024" height="1024" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%201024'%3E%3C/svg%3E" class="attachment-full size-full wp-image-777" alt="" data-lazy-srcset="https://regenere.site/wp-content/uploads/2023/03/Design-sem-nome-16-1-1.png 1024w,   https://regenere.site/wp-content/uploads/2023/03/Design-sem-nome-16-1-1-300x300.png 300w,   https://regenere.site/wp-content/uploads/2023/03/Design-sem-nome-16-1-1-150x150.png 150w,   https://regenere.site/wp-content/uploads/2023/03/Design-sem-nome-16-1-1-768x768.png 768w" data-lazy-sizes="(max-width: 1024px) 100vw, 1024px" data-lazy-src="https://regenere.site/wp-content/uploads/2023/03/Design-sem-nome-16-1-1.png" /><noscript><img loading="lazy" decoding="async" width="1024" height="1024" src="https://regenere.site/wp-content/uploads/2023/03/Design-sem-nome-16-1-1.png" class="attachment-full size-full wp-image-777" alt="" srcset="https://regenere.site/wp-content/uploads/2023/03/Design-sem-nome-16-1-1.png 1024w,   https://regenere.site/wp-content/uploads/2023/03/Design-sem-nome-16-1-1-300x300.png 300w,   https://regenere.site/wp-content/uploads/2023/03/Design-sem-nome-16-1-1-150x150.png 150w,   https://regenere.site/wp-content/uploads/2023/03/Design-sem-nome-16-1-1-768x768.png 768w" sizes="(max-width: 1024px) 100vw, 1024px" /></noscript></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">Colágeno Verisol®</h3><p class="elementor-image-box-description">Muito mais potente, é o único comprovadamente <b>focado em agir somente na pele</b>. Diferente de outros tipos de colágeno que agem nos ossos, cartilagens, cabelo e unha.
+</p></div></div>		</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-3ff9ec96" data-id="3ff9ec96" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-710435b7 elementor-position-top elementor-widget elementor-widget-image-box" data-id="710435b7" data-element_type="widget" data-widget_type="image-box.default">
+				<div class="elementor-widget-container">
+			<div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><img decoding="async" width="300" height="300" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20300'%3E%3C/svg%3E" class="attachment-full size-full wp-image-780" alt="" data-lazy-srcset="https://regenere.site/wp-content/uploads/2023/03/retinol-1.png 300w,   https://regenere.site/wp-content/uploads/2023/03/retinol-1-150x150.png 150w" data-lazy-sizes="(max-width: 300px) 100vw, 300px" data-lazy-src="https://regenere.site/wp-content/uploads/2023/03/retinol-1.png" /><noscript><img loading="lazy" decoding="async" width="300" height="300" src="https://regenere.site/wp-content/uploads/2023/03/retinol-1.png" class="attachment-full size-full wp-image-780" alt="" srcset="https://regenere.site/wp-content/uploads/2023/03/retinol-1.png 300w,   https://regenere.site/wp-content/uploads/2023/03/retinol-1-150x150.png 150w" sizes="(max-width: 300px) 100vw, 300px" /></noscript></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">Retinol</h3><p class="elementor-image-box-description">O <b>retinol</b> é um derivado da vitamina A que possui a <b>função de estimular a renovação celular</b>, auxiliando na prevenção e no tratamento do <b>envelhecimento</b>
+</p></div></div>		</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<div class="elementor-element elementor-element-289a9387 elementor-widget elementor-widget-spacer" data-id="289a9387" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-79672cad elementor-align-center elementor-tablet-align-center elementor-mobile-align-center elementor-widget elementor-widget-button" data-id="79672cad" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a class="elementor-button elementor-button-link elementor-size-sm" href="#preco">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon elementor-align-icon-left">
+				<i aria-hidden="true" class="fas fa-heart"></i>			</span>
+						<span class="elementor-button-text">EU QUERO RESTAURAR A MINHA PELE</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-4e705a84 elementor-widget elementor-widget-image" data-id="4e705a84" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img decoding="async" width="800" height="115" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20800%20115'%3E%3C/svg%3E" class="attachment-large size-large wp-image-729" alt="" data-lazy-srcset="https://regenere.site/wp-content/uploads/2023/03/barra-segura2-1-1-1-1024x147.png 1024w,   https://regenere.site/wp-content/uploads/2023/03/barra-segura2-1-1-1-300x43.png 300w,   https://regenere.site/wp-content/uploads/2023/03/barra-segura2-1-1-1-768x110.png 768w,   https://regenere.site/wp-content/uploads/2023/03/barra-segura2-1-1-1.png 1196w" data-lazy-sizes="(max-width: 800px) 100vw, 800px" data-lazy-src="https://regenere.site/wp-content/uploads/2023/03/barra-segura2-1-1-1-1024x147.png" /><noscript><img loading="lazy" decoding="async" width="800" height="115" src="https://regenere.site/wp-content/uploads/2023/03/barra-segura2-1-1-1-1024x147.png" class="attachment-large size-large wp-image-729" alt="" srcset="https://regenere.site/wp-content/uploads/2023/03/barra-segura2-1-1-1-1024x147.png 1024w,   https://regenere.site/wp-content/uploads/2023/03/barra-segura2-1-1-1-300x43.png 300w,   https://regenere.site/wp-content/uploads/2023/03/barra-segura2-1-1-1-768x110.png 768w,   https://regenere.site/wp-content/uploads/2023/03/barra-segura2-1-1-1.png 1196w" sizes="(max-width: 800px) 100vw, 800px" /></noscript>													</div>
+				</div>
+				<div class="elementor-element elementor-element-795c6870 elementor-widget elementor-widget-spacer" data-id="795c6870" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-4e5ded2b elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4e5ded2b" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;shape_divider_top&quot;:&quot;curve&quot;}">
+							<div class="elementor-background-overlay"></div>
+						<div class="elementor-shape elementor-shape-top" data-negative="false">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+    <path class="elementor-shape-fill" d="M1000,4.3V0H0v4.3C0.9,23.1,126.7,99.2,500,100S1000,22.7,1000,4.3z"/>
+</svg>		</div>
+					<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-4ebab499" data-id="4ebab499" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-370105f elementor-widget elementor-widget-spacer" data-id="370105f" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-3a29742e elementor-widget elementor-widget-heading" data-id="3a29742e" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Aprovado: Veja alguns resultados reais</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-5f640038 elementor-widget elementor-widget-heading" data-id="5f640038" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Mais de 37 mil pessoas já experimentaram o <b><u>REGENERE</u></b>, com mais de <b>98%</b> de <b>satisfação</b>!</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-49793aee elementor-arrows-position-outside elementor-pagination-position-outside elementor-widget elementor-widget-image-carousel" data-id="49793aee" data-element_type="widget" data-settings="{&quot;image_spacing_custom&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]},&quot;slides_to_show&quot;:&quot;2&quot;,&quot;slides_to_show_mobile&quot;:&quot;1&quot;,&quot;navigation&quot;:&quot;both&quot;,&quot;autoplay&quot;:&quot;yes&quot;,&quot;pause_on_hover&quot;:&quot;yes&quot;,&quot;pause_on_interaction&quot;:&quot;yes&quot;,&quot;autoplay_speed&quot;:5000,&quot;infinite&quot;:&quot;yes&quot;,&quot;speed&quot;:500,&quot;image_spacing_custom_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="image-carousel.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.20.0 - 26-03-2024 */
+.elementor-widget-image-carousel .swiper,.elementor-widget-image-carousel .swiper-container{position:static}.elementor-widget-image-carousel .swiper-container .swiper-slide figure,.elementor-widget-image-carousel .swiper .swiper-slide figure{line-height:inherit}.elementor-widget-image-carousel .swiper-slide{text-align:center}.elementor-image-carousel-wrapper:not(.swiper-container-initialized):not(.swiper-initialized) .swiper-slide{max-width:calc(100% / var(--e-image-carousel-slides-to-show, 3))}</style>		<div class="elementor-image-carousel-wrapper swiper" dir="ltr">
+			<div class="elementor-image-carousel swiper-wrapper swiper-image-stretch" aria-live="off">
+								<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="1 de 3"><figure class="swiper-slide-inner"><img width="700" height="505" decoding="async" class="swiper-slide-image" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20700%20505'%3E%3C/svg%3E" alt="resultado-01.png" data-lazy-src="https://regenere.site/wp-content/uploads/2023/03/resultado-01-1.png" /><noscript><img width="700" height="505" decoding="async" class="swiper-slide-image" src="https://regenere.site/wp-content/uploads/2023/03/resultado-01-1.png" alt="resultado-01.png" /></noscript></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="2 de 3"><figure class="swiper-slide-inner"><img width="700" height="505" decoding="async" class="swiper-slide-image" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20700%20505'%3E%3C/svg%3E" alt="resultado-03-min.png" data-lazy-src="https://regenere.site/wp-content/uploads/2023/03/resultado-03-min-1.png" /><noscript><img width="700" height="505" decoding="async" class="swiper-slide-image" src="https://regenere.site/wp-content/uploads/2023/03/resultado-03-min-1.png" alt="resultado-03-min.png" /></noscript></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="3 de 3"><figure class="swiper-slide-inner"><img width="700" height="505" decoding="async" class="swiper-slide-image" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20700%20505'%3E%3C/svg%3E" alt="resultado-02.png" data-lazy-src="https://regenere.site/wp-content/uploads/2023/03/resultado-02-1.png" /><noscript><img width="700" height="505" decoding="async" class="swiper-slide-image" src="https://regenere.site/wp-content/uploads/2023/03/resultado-02-1.png" alt="resultado-02.png" /></noscript></figure></div>			</div>
+												<div class="elementor-swiper-button elementor-swiper-button-prev" role="button" tabindex="0">
+						<i aria-hidden="true" class="eicon-chevron-left"></i>					</div>
+					<div class="elementor-swiper-button elementor-swiper-button-next" role="button" tabindex="0">
+						<i aria-hidden="true" class="eicon-chevron-right"></i>					</div>
+				
+									<div class="swiper-pagination"></div>
+									</div>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-3c3f4f28 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3c3f4f28" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;,&quot;shape_divider_bottom&quot;:&quot;curve&quot;,&quot;shape_divider_bottom_negative&quot;:&quot;yes&quot;}">
+					<div class="elementor-shape elementor-shape-bottom" data-negative="true">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+	<path class="elementor-shape-fill" d="M500,97C126.7,96.3,0.8,19.8,0,0v100l1000,0V1C1000,19.4,873.3,97.8,500,97z"/>
+</svg>		</div>
+					<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-5579b80d" data-id="5579b80d" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-1d8fe7f4 elementor-widget elementor-widget-spacer" data-id="1d8fe7f4" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-742adcd4 elementor-widget elementor-widget-heading" data-id="742adcd4" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default"><u>Satisfação<b> garantida</b></u>
+</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-44d0d47 elementor-widget elementor-widget-image" data-id="44d0d47" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img decoding="async" width="800" height="800" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20800%20800'%3E%3C/svg%3E" class="attachment-large size-large wp-image-2168" alt="" data-lazy-srcset="https://regenere.site/wp-content/uploads/2024/03/Selo_garantia-1024x1024-1.png 1024w,   https://regenere.site/wp-content/uploads/2024/03/Selo_garantia-1024x1024-1-300x300.png 300w,   https://regenere.site/wp-content/uploads/2024/03/Selo_garantia-1024x1024-1-150x150.png 150w,   https://regenere.site/wp-content/uploads/2024/03/Selo_garantia-1024x1024-1-768x768.png 768w" data-lazy-sizes="(max-width: 800px) 100vw, 800px" data-lazy-src="https://regenere.site/wp-content/uploads/2024/03/Selo_garantia-1024x1024-1.png" /><noscript><img loading="lazy" decoding="async" width="800" height="800" src="https://regenere.site/wp-content/uploads/2024/03/Selo_garantia-1024x1024-1.png" class="attachment-large size-large wp-image-2168" alt="" srcset="https://regenere.site/wp-content/uploads/2024/03/Selo_garantia-1024x1024-1.png 1024w,   https://regenere.site/wp-content/uploads/2024/03/Selo_garantia-1024x1024-1-300x300.png 300w,   https://regenere.site/wp-content/uploads/2024/03/Selo_garantia-1024x1024-1-150x150.png 150w,   https://regenere.site/wp-content/uploads/2024/03/Selo_garantia-1024x1024-1-768x768.png 768w" sizes="(max-width: 800px) 100vw, 800px" /></noscript>													</div>
+				</div>
+				<div class="elementor-element elementor-element-3c7f585c elementor-widget elementor-widget-heading" data-id="3c7f585c" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Confiamos tanto na eficácia do Regenere . Isso mesmo!<span style="white-space-collapse: collapse; background-color: transparent;">&nbsp;</span><span style="white-space-collapse: collapse; background-color: transparent; font-weight: bolder;">Resultados em 30 Dias com&nbsp;<u>REGENERE</u></span><span style="white-space-collapse: collapse; background-color: transparent;">&nbsp;</span><span style="white-space-collapse: collapse; background-color: transparent;">devolvemos o seu dinheiro.&nbsp;</span><div data-id="23e5261e" data-element_type="widget" data-widget_type="spacer.default" style="flex-basis: var(--flex-basis); flex-grow: var(--flex-grow); flex-shrink: var(--flex-shrink); order: var(--order); align-self: var(--align-self); flex-direction: var(--flex-direction); flex-wrap: var(--flex-wrap); justify-content: var(--justify-content); align-items: var(--align-items); align-content: var(--align-content); gap: var(--gap); --swiper-theme-color: #000; --swiper-navigation-size: 44px; --swiper-pagination-bullet-size: 6px; --swiper-pagination-bullet-horizontal-gap: 6px; --widgets-spacing: 20px; width: 620px; --spacer-size: 25px; color: rgb(51, 51, 51); font-family: -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, &quot;Noto Sans&quot;, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;; font-size: 16px; text-align: start; white-space-collapse: collapse;"><div style="transition: background .3s,border .3s,border-radius .3s,box-shadow .3s,transform var(--e-transform-transition-duration,.4s);"><div></div></div></div> </h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-23e5261e elementor-widget elementor-widget-spacer" data-id="23e5261e" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-3e96b1a8 elementor-align-center elementor-tablet-align-center elementor-mobile-align-center elementor-widget elementor-widget-button" data-id="3e96b1a8" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a class="elementor-button elementor-button-link elementor-size-sm" href="#preco">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon elementor-align-icon-left">
+				<i aria-hidden="true" class="fas fa-heart"></i>			</span>
+						<span class="elementor-button-text">EU QUERO RESTAURAR A MINHA PELE</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-36d64bcb elementor-widget elementor-widget-image" data-id="36d64bcb" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img decoding="async" width="800" height="115" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20800%20115'%3E%3C/svg%3E" class="attachment-large size-large wp-image-809" alt="" data-lazy-srcset="https://regenere.site/wp-content/uploads/2023/03/barra-segura-2-white-1-1-1024x147.png 1024w,   https://regenere.site/wp-content/uploads/2023/03/barra-segura-2-white-1-1-300x43.png 300w,   https://regenere.site/wp-content/uploads/2023/03/barra-segura-2-white-1-1-768x110.png 768w,   https://regenere.site/wp-content/uploads/2023/03/barra-segura-2-white-1-1.png 1196w" data-lazy-sizes="(max-width: 800px) 100vw, 800px" data-lazy-src="https://regenere.site/wp-content/uploads/2023/03/barra-segura-2-white-1-1-1024x147.png" /><noscript><img loading="lazy" decoding="async" width="800" height="115" src="https://regenere.site/wp-content/uploads/2023/03/barra-segura-2-white-1-1-1024x147.png" class="attachment-large size-large wp-image-809" alt="" srcset="https://regenere.site/wp-content/uploads/2023/03/barra-segura-2-white-1-1-1024x147.png 1024w,   https://regenere.site/wp-content/uploads/2023/03/barra-segura-2-white-1-1-300x43.png 300w,   https://regenere.site/wp-content/uploads/2023/03/barra-segura-2-white-1-1-768x110.png 768w,   https://regenere.site/wp-content/uploads/2023/03/barra-segura-2-white-1-1.png 1196w" sizes="(max-width: 800px) 100vw, 800px" /></noscript>													</div>
+				</div>
+				<div class="elementor-element elementor-element-67cb5e85 elementor-widget elementor-widget-spacer" data-id="67cb5e85" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-6facca08 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="6facca08" data-element_type="section" id="preco" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;shape_divider_bottom_negative&quot;:&quot;yes&quot;,&quot;shape_divider_bottom&quot;:&quot;curve&quot;}">
+							<div class="elementor-background-overlay"></div>
+						<div class="elementor-shape elementor-shape-bottom" data-negative="true">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+	<path class="elementor-shape-fill" d="M500,97C126.7,96.3,0.8,19.8,0,0v100l1000,0V1C1000,19.4,873.3,97.8,500,97z"/>
+</svg>		</div>
+					<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-6046610c" data-id="6046610c" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-efd3aef elementor-widget elementor-widget-spacer" data-id="efd3aef" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-54e8eb8e elementor-widget elementor-widget-heading" data-id="54e8eb8e" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Dúvidas sobre comprar pela internet?
+</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-22d61360 elementor-widget elementor-widget-heading" data-id="22d61360" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Comprar o <b><u>REGENERE</u></b> é fácil, pratico e totalmente seguro.</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-2886d02b elementor-widget elementor-widget-image" data-id="2886d02b" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img decoding="async" width="778" height="133" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20778%20133'%3E%3C/svg%3E" class="attachment-large size-large wp-image-818" alt="" data-lazy-srcset="https://regenere.site/wp-content/uploads/2023/03/faixa-oferta-1-1.png 778w,   https://regenere.site/wp-content/uploads/2023/03/faixa-oferta-1-1-300x51.png 300w,   https://regenere.site/wp-content/uploads/2023/03/faixa-oferta-1-1-768x131.png 768w" data-lazy-sizes="(max-width: 778px) 100vw, 778px" data-lazy-src="https://regenere.site/wp-content/uploads/2023/03/faixa-oferta-1-1.png" /><noscript><img loading="lazy" decoding="async" width="778" height="133" src="https://regenere.site/wp-content/uploads/2023/03/faixa-oferta-1-1.png" class="attachment-large size-large wp-image-818" alt="" srcset="https://regenere.site/wp-content/uploads/2023/03/faixa-oferta-1-1.png 778w,   https://regenere.site/wp-content/uploads/2023/03/faixa-oferta-1-1-300x51.png 300w,   https://regenere.site/wp-content/uploads/2023/03/faixa-oferta-1-1-768x131.png 768w" sizes="(max-width: 778px) 100vw, 778px" /></noscript>													</div>
+				</div>
+				<div class="elementor-element elementor-element-6cde33bb elementor-widget elementor-widget-heading" data-id="6cde33bb" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Recomendamos de <b>3 a 8 frascos para melhores resultados!</b>
+</h2>		</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-53ae1ee1 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="53ae1ee1" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-66108e8b" data-id="66108e8b" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-21a024bf elementor-widget elementor-widget-image" data-id="21a024bf" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+														<a href="https://ev.braip.com/checkout/pla229vd/che7dowl?split=12">
+							<img decoding="async" width="498" height="1024" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20498%201024'%3E%3C/svg%3E" class="attachment-large size-large wp-image-2170" alt="" data-lazy-srcset="https://regenere.site/wp-content/uploads/2024/03/card-2-498x1024.webp 498w,   https://regenere.site/wp-content/uploads/2024/03/card-2-146x300.webp 146w,   https://regenere.site/wp-content/uploads/2024/03/card-2.webp 508w" data-lazy-sizes="(max-width: 498px) 100vw, 498px" data-lazy-src="https://regenere.site/wp-content/uploads/2024/03/card-2-498x1024.webp" /><noscript><img loading="lazy" decoding="async" width="498" height="1024" src="https://regenere.site/wp-content/uploads/2024/03/card-2-498x1024.webp" class="attachment-large size-large wp-image-2170" alt="" srcset="https://regenere.site/wp-content/uploads/2024/03/card-2-498x1024.webp 498w,   https://regenere.site/wp-content/uploads/2024/03/card-2-146x300.webp 146w,   https://regenere.site/wp-content/uploads/2024/03/card-2.webp 508w" sizes="(max-width: 498px) 100vw, 498px" /></noscript>								</a>
+													</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-73d93cfa" data-id="73d93cfa" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-26f8288 elementor-widget elementor-widget-image" data-id="26f8288" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+														<a href="https://ev.braip.com/checkout/plakywq2/che7dowl/?split=12">
+							<img decoding="async" width="498" height="1024" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20498%201024'%3E%3C/svg%3E" class="attachment-large size-large wp-image-1964" alt="" data-lazy-srcset="https://regenere.site/wp-content/uploads/2023/06/3-2.png-498x1024.webp 498w,   https://regenere.site/wp-content/uploads/2023/06/3-2.png-146x300.webp 146w,   https://regenere.site/wp-content/uploads/2023/06/3-2.png.webp 508w" data-lazy-sizes="(max-width: 498px) 100vw, 498px" data-lazy-src="https://regenere.site/wp-content/uploads/2023/06/3-2.png-498x1024.webp" /><noscript><img loading="lazy" decoding="async" width="498" height="1024" src="https://regenere.site/wp-content/uploads/2023/06/3-2.png-498x1024.webp" class="attachment-large size-large wp-image-1964" alt="" srcset="https://regenere.site/wp-content/uploads/2023/06/3-2.png-498x1024.webp 498w,   https://regenere.site/wp-content/uploads/2023/06/3-2.png-146x300.webp 146w,   https://regenere.site/wp-content/uploads/2023/06/3-2.png.webp 508w" sizes="(max-width: 498px) 100vw, 498px" /></noscript>								</a>
+													</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-439ec86" data-id="439ec86" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-31c8baef elementor-widget elementor-widget-image" data-id="31c8baef" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+														<a href="https://ev.braip.com/checkout/pla049xl/che7dowl?split=12">
+							<img decoding="async" width="498" height="1024" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20498%201024'%3E%3C/svg%3E" class="attachment-large size-large wp-image-1963" alt="" data-lazy-srcset="https://regenere.site/wp-content/uploads/2023/06/2-3.png-498x1024.webp 498w,   https://regenere.site/wp-content/uploads/2023/06/2-3.png-146x300.webp 146w,   https://regenere.site/wp-content/uploads/2023/06/2-3.png.webp 508w" data-lazy-sizes="(max-width: 498px) 100vw, 498px" data-lazy-src="https://regenere.site/wp-content/uploads/2023/06/2-3.png-498x1024.webp" /><noscript><img loading="lazy" decoding="async" width="498" height="1024" src="https://regenere.site/wp-content/uploads/2023/06/2-3.png-498x1024.webp" class="attachment-large size-large wp-image-1963" alt="" srcset="https://regenere.site/wp-content/uploads/2023/06/2-3.png-498x1024.webp 498w,   https://regenere.site/wp-content/uploads/2023/06/2-3.png-146x300.webp 146w,   https://regenere.site/wp-content/uploads/2023/06/2-3.png.webp 508w" sizes="(max-width: 498px) 100vw, 498px" /></noscript>								</a>
+													</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-49688ff6" data-id="49688ff6" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-7e8ed176 elementor-widget elementor-widget-image" data-id="7e8ed176" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+														<a href="https://ev.braip.com/checkout/pla4l4dg/che7dowl?split=12">
+							<img decoding="async" width="498" height="1024" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20498%201024'%3E%3C/svg%3E" class="attachment-large size-large wp-image-1962" alt="" data-lazy-srcset="https://regenere.site/wp-content/uploads/2023/06/1-3.png-498x1024.webp 498w,   https://regenere.site/wp-content/uploads/2023/06/1-3.png-146x300.webp 146w,   https://regenere.site/wp-content/uploads/2023/06/1-3.png.webp 508w" data-lazy-sizes="(max-width: 498px) 100vw, 498px" data-lazy-src="https://regenere.site/wp-content/uploads/2023/06/1-3.png-498x1024.webp" /><noscript><img loading="lazy" decoding="async" width="498" height="1024" src="https://regenere.site/wp-content/uploads/2023/06/1-3.png-498x1024.webp" class="attachment-large size-large wp-image-1962" alt="" srcset="https://regenere.site/wp-content/uploads/2023/06/1-3.png-498x1024.webp 498w,   https://regenere.site/wp-content/uploads/2023/06/1-3.png-146x300.webp 146w,   https://regenere.site/wp-content/uploads/2023/06/1-3.png.webp 508w" sizes="(max-width: 498px) 100vw, 498px" /></noscript>								</a>
+													</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<div class="elementor-element elementor-element-56518491 elementor-widget elementor-widget-spacer" data-id="56518491" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-71e52364 elementor-widget elementor-widget-heading" data-id="71e52364" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Conquiste uma pele incrível enquanto você descansa, use <b>REGENERE</b>!</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-1b8ecb7e elementor-align-center elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="1b8ecb7e" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+					<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-lock"></i>						</span>
+										<span class="elementor-icon-list-text"> Compra 100% Segura e Satisfação Garantida!</span>
+									</li>
+						</ul>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-81058c elementor-widget elementor-widget-image" data-id="81058c" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img decoding="async" width="800" height="115" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20800%20115'%3E%3C/svg%3E" class="attachment-large size-large wp-image-809" alt="" data-lazy-srcset="https://regenere.site/wp-content/uploads/2023/03/barra-segura-2-white-1-1-1024x147.png 1024w,   https://regenere.site/wp-content/uploads/2023/03/barra-segura-2-white-1-1-300x43.png 300w,   https://regenere.site/wp-content/uploads/2023/03/barra-segura-2-white-1-1-768x110.png 768w,   https://regenere.site/wp-content/uploads/2023/03/barra-segura-2-white-1-1.png 1196w" data-lazy-sizes="(max-width: 800px) 100vw, 800px" data-lazy-src="https://regenere.site/wp-content/uploads/2023/03/barra-segura-2-white-1-1-1024x147.png" /><noscript><img loading="lazy" decoding="async" width="800" height="115" src="https://regenere.site/wp-content/uploads/2023/03/barra-segura-2-white-1-1-1024x147.png" class="attachment-large size-large wp-image-809" alt="" srcset="https://regenere.site/wp-content/uploads/2023/03/barra-segura-2-white-1-1-1024x147.png 1024w,   https://regenere.site/wp-content/uploads/2023/03/barra-segura-2-white-1-1-300x43.png 300w,   https://regenere.site/wp-content/uploads/2023/03/barra-segura-2-white-1-1-768x110.png 768w,   https://regenere.site/wp-content/uploads/2023/03/barra-segura-2-white-1-1.png 1196w" sizes="(max-width: 800px) 100vw, 800px" /></noscript>													</div>
+				</div>
+				<div class="elementor-element elementor-element-2916c648 elementor-widget elementor-widget-spacer" data-id="2916c648" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-783e8aa8 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="783e8aa8" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-546288c3" data-id="546288c3" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-42e868f2 elementor-widget elementor-widget-spacer" data-id="42e868f2" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-2c702bdd elementor-widget elementor-widget-heading" data-id="2c702bdd" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">DÚVIDAS FREQUENTES</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-32de6b6c elementor-hidden-phone elementor-widget elementor-widget-heading" data-id="32de6b6c" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">VEJAS AS PRINCIPAIS DÚVIDAS DE NOSSOS CLIENTES SOBRE O <b><u>REGENERE</u></b></h2>		</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-72212cc7 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="72212cc7" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-1ebfd298" data-id="1ebfd298" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-398b195e elementor-widget elementor-widget-toggle" data-id="398b195e" data-element_type="widget" data-widget_type="toggle.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.20.0 - 26-03-2024 */
+.elementor-toggle{text-align:left}.elementor-toggle .elementor-tab-title{font-weight:700;line-height:1;margin:0;padding:15px;border-bottom:1px solid #d5d8dc;cursor:pointer;outline:none}.elementor-toggle .elementor-tab-title .elementor-toggle-icon{display:inline-block;width:1em}.elementor-toggle .elementor-tab-title .elementor-toggle-icon svg{margin-inline-start:-5px;width:1em;height:1em}.elementor-toggle .elementor-tab-title .elementor-toggle-icon.elementor-toggle-icon-right{float:right;text-align:right}.elementor-toggle .elementor-tab-title .elementor-toggle-icon.elementor-toggle-icon-left{float:left;text-align:left}.elementor-toggle .elementor-tab-title .elementor-toggle-icon .elementor-toggle-icon-closed{display:block}.elementor-toggle .elementor-tab-title .elementor-toggle-icon .elementor-toggle-icon-opened{display:none}.elementor-toggle .elementor-tab-title.elementor-active{border-bottom:none}.elementor-toggle .elementor-tab-title.elementor-active .elementor-toggle-icon-closed{display:none}.elementor-toggle .elementor-tab-title.elementor-active .elementor-toggle-icon-opened{display:block}.elementor-toggle .elementor-tab-content{padding:15px;border-bottom:1px solid #d5d8dc;display:none}@media (max-width:767px){.elementor-toggle .elementor-tab-title{padding:12px}.elementor-toggle .elementor-tab-content{padding:12px 10px}}.e-con-inner>.elementor-widget-toggle,.e-con>.elementor-widget-toggle{width:var(--container-widget-width);--flex-grow:var(--container-widget-flex-grow)}</style>		<div class="elementor-toggle">
+							<div class="elementor-toggle-item">
+					<div id="elementor-tab-title-9651" class="elementor-tab-title" data-tab="1" role="button" aria-controls="elementor-tab-content-9651" aria-expanded="false">
+												<span class="elementor-toggle-icon elementor-toggle-icon-left" aria-hidden="true">
+															<span class="elementor-toggle-icon-closed"><i class="fas fa-check-circle"></i></span>
+								<span class="elementor-toggle-icon-opened"><i class="elementor-toggle-icon-opened fas fa-check-circle"></i></span>
+													</span>
+												<a class="elementor-toggle-title" tabindex="0"> Quando vou ter resultados?</a>
+					</div>
+
+					<div id="elementor-tab-content-9651" class="elementor-tab-content elementor-clearfix" data-tab="1" role="region" aria-labelledby="elementor-tab-title-9651"><p>É recomendando o uso por 3 meses consecutivos para obter os melhores resultados. No entanto, há relato de pessoas que já sentem uma boa diferença entre a 2 e 4 semanas.</p></div>
+				</div>
+							<div class="elementor-toggle-item">
+					<div id="elementor-tab-title-9652" class="elementor-tab-title" data-tab="2" role="button" aria-controls="elementor-tab-content-9652" aria-expanded="false">
+												<span class="elementor-toggle-icon elementor-toggle-icon-left" aria-hidden="true">
+															<span class="elementor-toggle-icon-closed"><i class="fas fa-check-circle"></i></span>
+								<span class="elementor-toggle-icon-opened"><i class="elementor-toggle-icon-opened fas fa-check-circle"></i></span>
+													</span>
+												<a class="elementor-toggle-title" tabindex="0">Como age o REGENERE?</a>
+					</div>
+
+					<div id="elementor-tab-content-9652" class="elementor-tab-content elementor-clearfix" data-tab="2" role="region" aria-labelledby="elementor-tab-title-9652"><p>REGENERE age diretamente na célula da cútis, proporcionando um tratamento de dentro para fora, sendo 100% absorvido pelo organismo graças ao VERISOL presente em sua composição, atuando diretamente na produção de colágeno, proporcionando uma pele firme e livre das rugas.</p></div>
+				</div>
+							<div class="elementor-toggle-item">
+					<div id="elementor-tab-title-9653" class="elementor-tab-title" data-tab="3" role="button" aria-controls="elementor-tab-content-9653" aria-expanded="false">
+												<span class="elementor-toggle-icon elementor-toggle-icon-left" aria-hidden="true">
+															<span class="elementor-toggle-icon-closed"><i class="fas fa-check-circle"></i></span>
+								<span class="elementor-toggle-icon-opened"><i class="elementor-toggle-icon-opened fas fa-check-circle"></i></span>
+													</span>
+												<a class="elementor-toggle-title" tabindex="0">COMO DEVO UTILIZAR O REGENERE?</a>
+					</div>
+
+					<div id="elementor-tab-content-9653" class="elementor-tab-content elementor-clearfix" data-tab="3" role="region" aria-labelledby="elementor-tab-title-9653"><p>Tudo o que você precisará fazer é usar Regenere 2x ao dia. Sendo 6 gotas pela manhã e 6 gotas à tarde ou se preferia a noite , esta formula e ultra concentrada!.</p></div>
+				</div>
+							<div class="elementor-toggle-item">
+					<div id="elementor-tab-title-9654" class="elementor-tab-title" data-tab="4" role="button" aria-controls="elementor-tab-content-9654" aria-expanded="false">
+												<span class="elementor-toggle-icon elementor-toggle-icon-left" aria-hidden="true">
+															<span class="elementor-toggle-icon-closed"><i class="fas fa-check-circle"></i></span>
+								<span class="elementor-toggle-icon-opened"><i class="elementor-toggle-icon-opened fas fa-check-circle"></i></span>
+													</span>
+												<a class="elementor-toggle-title" tabindex="0"> Já utilizo outro produto, posso utilizar esse nutracêutico em paralelo?</a>
+					</div>
+
+					<div id="elementor-tab-content-9654" class="elementor-tab-content elementor-clearfix" data-tab="4" role="region" aria-labelledby="elementor-tab-title-9654"><p>Totalmente seguro, sem nenhuma contraindicação ou efeito colateral. No entanto, você não deve interromper o uso de remédios sem a autorização médica.</p></div>
+				</div>
+								</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-217cd492" data-id="217cd492" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-67e8982d elementor-widget elementor-widget-toggle" data-id="67e8982d" data-element_type="widget" data-widget_type="toggle.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-toggle">
+							<div class="elementor-toggle-item">
+					<div id="elementor-tab-title-1741" class="elementor-tab-title" data-tab="1" role="button" aria-controls="elementor-tab-content-1741" aria-expanded="false">
+												<span class="elementor-toggle-icon elementor-toggle-icon-left" aria-hidden="true">
+															<span class="elementor-toggle-icon-closed"><i class="fas fa-check-circle"></i></span>
+								<span class="elementor-toggle-icon-opened"><i class="elementor-toggle-icon-opened fas fa-check-circle"></i></span>
+													</span>
+												<a class="elementor-toggle-title" tabindex="0">REGENERE é aprovado pela ANVISA?</a>
+					</div>
+
+					<div id="elementor-tab-content-1741" class="elementor-tab-content elementor-clearfix" data-tab="1" role="region" aria-labelledby="elementor-tab-title-1741"><p class="p1" style="margin-right: 0px; margin-bottom: 0px; margin-left: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 13px; line-height: normal; font-family: &quot;Helvetica Neue&quot;; color: rgb(0, 0, 0);">ALIMENTOS E EMBALAGENS DISPENSADOS DA OBRIGATORIEDADE DE REGISTRO</p><p class="p1" style="margin-right: 0px; margin-bottom: 0px; margin-left: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 13px; line-height: normal; font-family: &quot;Helvetica Neue&quot;; color: rgb(0, 0, 0);">Art. 4° O Anexo I da Resolução – RDC n° 240/2018 ( ANVISA) 27, de 2010,<span class="Apple-converted-space">&nbsp;</span></p><p class="p1" style="margin-right: 0px; margin-bottom: 0px; margin-left: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 13px; line-height: normal; font-family: &quot;Helvetica Neue&quot;; color: rgb(0, 0, 0);">Estão inclusos:</p><p class="p1" style="margin-right: 0px; margin-bottom: 0px; margin-left: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 13px; line-height: normal; font-family: &quot;Helvetica Neue&quot;; color: rgb(0, 0, 0);">4300196 Produtos proteicos de origem vegetal</p><p class="p1" style="margin-right: 0px; margin-bottom: 0px; margin-left: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 13px; line-height: normal; font-family: &quot;Helvetica Neue&quot;; color: rgb(0, 0, 0);">4300041 Suplementos alimentares (6)</p></div>
+				</div>
+							<div class="elementor-toggle-item">
+					<div id="elementor-tab-title-1742" class="elementor-tab-title" data-tab="2" role="button" aria-controls="elementor-tab-content-1742" aria-expanded="false">
+												<span class="elementor-toggle-icon elementor-toggle-icon-left" aria-hidden="true">
+															<span class="elementor-toggle-icon-closed"><i class="fas fa-check-circle"></i></span>
+								<span class="elementor-toggle-icon-opened"><i class="elementor-toggle-icon-opened fas fa-check-circle"></i></span>
+													</span>
+												<a class="elementor-toggle-title" tabindex="0">Causa algum efeito colateral</a>
+					</div>
+
+					<div id="elementor-tab-content-1742" class="elementor-tab-content elementor-clearfix" data-tab="2" role="region" aria-labelledby="elementor-tab-title-1742"><p>Não, o REGENERE não causa nenhum efeito colateral, pois ele é um produto a base de compostos naturais, que funciona como um suplemento<br />alimentar.</p></div>
+				</div>
+							<div class="elementor-toggle-item">
+					<div id="elementor-tab-title-1743" class="elementor-tab-title" data-tab="3" role="button" aria-controls="elementor-tab-content-1743" aria-expanded="false">
+												<span class="elementor-toggle-icon elementor-toggle-icon-left" aria-hidden="true">
+															<span class="elementor-toggle-icon-closed"><i class="fas fa-check-circle"></i></span>
+								<span class="elementor-toggle-icon-opened"><i class="elementor-toggle-icon-opened fas fa-check-circle"></i></span>
+													</span>
+												<a class="elementor-toggle-title" tabindex="0">COMO POSSO COMPRAR O REGENERE?</a>
+					</div>
+
+					<div id="elementor-tab-content-1743" class="elementor-tab-content elementor-clearfix" data-tab="3" role="region" aria-labelledby="elementor-tab-title-1743"><p>Basta escolher o kit que mais combina com você. Regenere pode ser pago a vista, através de boleto bancário, ou através de cartão de crédito parcelado em até 12x.</p></div>
+				</div>
+							<div class="elementor-toggle-item">
+					<div id="elementor-tab-title-1744" class="elementor-tab-title" data-tab="4" role="button" aria-controls="elementor-tab-content-1744" aria-expanded="false">
+												<span class="elementor-toggle-icon elementor-toggle-icon-left" aria-hidden="true">
+															<span class="elementor-toggle-icon-closed"><i class="fas fa-check-circle"></i></span>
+								<span class="elementor-toggle-icon-opened"><i class="elementor-toggle-icon-opened fas fa-check-circle"></i></span>
+													</span>
+												<a class="elementor-toggle-title" tabindex="0">QUANTO TEMPO PARA O REGENERE FAZER EFEITO?</a>
+					</div>
+
+					<div id="elementor-tab-content-1744" class="elementor-tab-content elementor-clearfix" data-tab="4" role="region" aria-labelledby="elementor-tab-title-1744"><p>É recomendando o uso por 3 meses consecutivos para obter os melhores resultados. No entanto, há relato de pessoas que já sentem uma boa diferença entre a 2 e 4 semanas.</p></div>
+				</div>
+								</div>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<div class="elementor-element elementor-element-4b6f22d7 elementor-widget elementor-widget-spacer" data-id="4b6f22d7" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-4b57cc1c elementor-align-center elementor-tablet-align-center elementor-mobile-align-center elementor-widget elementor-widget-button" data-id="4b57cc1c" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a class="elementor-button elementor-button-link elementor-size-sm" href="#preco">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon elementor-align-icon-left">
+				<i aria-hidden="true" class="fas fa-check-double"></i>			</span>
+						<span class="elementor-button-text">EU QUERO COMPRAR</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-25430abb elementor-widget elementor-widget-image" data-id="25430abb" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img decoding="async" width="800" height="115" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20800%20115'%3E%3C/svg%3E" class="attachment-large size-large wp-image-729" alt="" data-lazy-srcset="https://regenere.site/wp-content/uploads/2023/03/barra-segura2-1-1-1-1024x147.png 1024w,   https://regenere.site/wp-content/uploads/2023/03/barra-segura2-1-1-1-300x43.png 300w,   https://regenere.site/wp-content/uploads/2023/03/barra-segura2-1-1-1-768x110.png 768w,   https://regenere.site/wp-content/uploads/2023/03/barra-segura2-1-1-1.png 1196w" data-lazy-sizes="(max-width: 800px) 100vw, 800px" data-lazy-src="https://regenere.site/wp-content/uploads/2023/03/barra-segura2-1-1-1-1024x147.png" /><noscript><img loading="lazy" decoding="async" width="800" height="115" src="https://regenere.site/wp-content/uploads/2023/03/barra-segura2-1-1-1-1024x147.png" class="attachment-large size-large wp-image-729" alt="" srcset="https://regenere.site/wp-content/uploads/2023/03/barra-segura2-1-1-1-1024x147.png 1024w,   https://regenere.site/wp-content/uploads/2023/03/barra-segura2-1-1-1-300x43.png 300w,   https://regenere.site/wp-content/uploads/2023/03/barra-segura2-1-1-1-768x110.png 768w,   https://regenere.site/wp-content/uploads/2023/03/barra-segura2-1-1-1.png 1196w" sizes="(max-width: 800px) 100vw, 800px" /></noscript>													</div>
+				</div>
+				<div class="elementor-element elementor-element-624efb29 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="624efb29" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.20.0 - 26-03-2024 */
+.elementor-widget-divider{--divider-border-style:none;--divider-border-width:1px;--divider-color:#0c0d0e;--divider-icon-size:20px;--divider-element-spacing:10px;--divider-pattern-height:24px;--divider-pattern-size:20px;--divider-pattern-url:none;--divider-pattern-repeat:repeat-x}.elementor-widget-divider .elementor-divider{display:flex}.elementor-widget-divider .elementor-divider__text{font-size:15px;line-height:1;max-width:95%}.elementor-widget-divider .elementor-divider__element{margin:0 var(--divider-element-spacing);flex-shrink:0}.elementor-widget-divider .elementor-icon{font-size:var(--divider-icon-size)}.elementor-widget-divider .elementor-divider-separator{display:flex;margin:0;direction:ltr}.elementor-widget-divider--view-line_icon .elementor-divider-separator,.elementor-widget-divider--view-line_text .elementor-divider-separator{align-items:center}.elementor-widget-divider--view-line_icon .elementor-divider-separator:after,.elementor-widget-divider--view-line_icon .elementor-divider-separator:before,.elementor-widget-divider--view-line_text .elementor-divider-separator:after,.elementor-widget-divider--view-line_text .elementor-divider-separator:before{display:block;content:"";border-block-end:0;flex-grow:1;border-block-start:var(--divider-border-width) var(--divider-border-style) var(--divider-color)}.elementor-widget-divider--element-align-left .elementor-divider .elementor-divider-separator>.elementor-divider__svg:first-of-type{flex-grow:0;flex-shrink:100}.elementor-widget-divider--element-align-left .elementor-divider-separator:before{content:none}.elementor-widget-divider--element-align-left .elementor-divider__element{margin-left:0}.elementor-widget-divider--element-align-right .elementor-divider .elementor-divider-separator>.elementor-divider__svg:last-of-type{flex-grow:0;flex-shrink:100}.elementor-widget-divider--element-align-right .elementor-divider-separator:after{content:none}.elementor-widget-divider--element-align-right .elementor-divider__element{margin-right:0}.elementor-widget-divider--element-align-start .elementor-divider .elementor-divider-separator>.elementor-divider__svg:first-of-type{flex-grow:0;flex-shrink:100}.elementor-widget-divider--element-align-start .elementor-divider-separator:before{content:none}.elementor-widget-divider--element-align-start .elementor-divider__element{margin-inline-start:0}.elementor-widget-divider--element-align-end .elementor-divider .elementor-divider-separator>.elementor-divider__svg:last-of-type{flex-grow:0;flex-shrink:100}.elementor-widget-divider--element-align-end .elementor-divider-separator:after{content:none}.elementor-widget-divider--element-align-end .elementor-divider__element{margin-inline-end:0}.elementor-widget-divider:not(.elementor-widget-divider--view-line_text):not(.elementor-widget-divider--view-line_icon) .elementor-divider-separator{border-block-start:var(--divider-border-width) var(--divider-border-style) var(--divider-color)}.elementor-widget-divider--separator-type-pattern{--divider-border-style:none}.elementor-widget-divider--separator-type-pattern.elementor-widget-divider--view-line .elementor-divider-separator,.elementor-widget-divider--separator-type-pattern:not(.elementor-widget-divider--view-line) .elementor-divider-separator:after,.elementor-widget-divider--separator-type-pattern:not(.elementor-widget-divider--view-line) .elementor-divider-separator:before,.elementor-widget-divider--separator-type-pattern:not([class*=elementor-widget-divider--view]) .elementor-divider-separator{width:100%;min-height:var(--divider-pattern-height);-webkit-mask-size:var(--divider-pattern-size) 100%;mask-size:var(--divider-pattern-size) 100%;-webkit-mask-repeat:var(--divider-pattern-repeat);mask-repeat:var(--divider-pattern-repeat);background-color:var(--divider-color);-webkit-mask-image:var(--divider-pattern-url);mask-image:var(--divider-pattern-url)}.elementor-widget-divider--no-spacing{--divider-pattern-size:auto}.elementor-widget-divider--bg-round{--divider-pattern-repeat:round}.rtl .elementor-widget-divider .elementor-divider__text{direction:rtl}.e-con-inner>.elementor-widget-divider,.e-con>.elementor-widget-divider{width:var(--container-widget-width,100%);--flex-grow:var(--container-widget-flex-grow)}</style>		<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-2a125425 elementor-widget elementor-widget-image" data-id="2a125425" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+														<a href="https://api.whatsapp.com/send?phone=5591981580986&#038;text=Quer%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20Regenere%3F">
+							<img decoding="async" width="512" height="512" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20512%20512'%3E%3C/svg%3E" class="attachment-large size-large wp-image-856" alt="" data-lazy-src="https://regenere.site/wp-content/uploads/2023/03/whatsapp-1.svg" /><noscript><img loading="lazy" decoding="async" width="512" height="512" src="https://regenere.site/wp-content/uploads/2023/03/whatsapp-1.svg" class="attachment-large size-large wp-image-856" alt="" /></noscript>								</a>
+													</div>
+				</div>
+				<div class="elementor-element elementor-element-1da62849 elementor-widget elementor-widget-heading" data-id="1da62849" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default"><a href="https://api.whatsapp.com/send?phone=5591981580986&#038;text=Quer%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20Regenere%3F">Que falar com uma de nossas atendentes?</a></h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-25007415 elementor-widget elementor-widget-heading" data-id="25007415" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default"><a href="https://api.whatsapp.com/send?phone=5591981580986&#038;text=Quer%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20Regenere%3F">Se você possui dúvidas e quer falar direto com uma de nossas consultoras, disponibilizamos um Whatsapp Exclusivo. Para acessar clique no botão abaixo.</a></h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-73fc30e elementor-align-center elementor-tablet-align-center elementor-mobile-align-center elementor-widget elementor-widget-button" data-id="73fc30e" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a class="elementor-button elementor-button-link elementor-size-sm" href="https://api.whatsapp.com/send?phone=5591981580986&#038;text=Quer%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20Regenere%3F">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon elementor-align-icon-left">
+				<i aria-hidden="true" class="fab fa-whatsapp"></i>			</span>
+						<span class="elementor-button-text">CHAMAR NO WHATSAPP</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-5e1ebc24 elementor-widget elementor-widget-image" data-id="5e1ebc24" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img decoding="async" width="800" height="115" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20800%20115'%3E%3C/svg%3E" class="attachment-large size-large wp-image-729" alt="" data-lazy-srcset="https://regenere.site/wp-content/uploads/2023/03/barra-segura2-1-1-1-1024x147.png 1024w,   https://regenere.site/wp-content/uploads/2023/03/barra-segura2-1-1-1-300x43.png 300w,   https://regenere.site/wp-content/uploads/2023/03/barra-segura2-1-1-1-768x110.png 768w,   https://regenere.site/wp-content/uploads/2023/03/barra-segura2-1-1-1.png 1196w" data-lazy-sizes="(max-width: 800px) 100vw, 800px" data-lazy-src="https://regenere.site/wp-content/uploads/2023/03/barra-segura2-1-1-1-1024x147.png" /><noscript><img loading="lazy" decoding="async" width="800" height="115" src="https://regenere.site/wp-content/uploads/2023/03/barra-segura2-1-1-1-1024x147.png" class="attachment-large size-large wp-image-729" alt="" srcset="https://regenere.site/wp-content/uploads/2023/03/barra-segura2-1-1-1-1024x147.png 1024w,   https://regenere.site/wp-content/uploads/2023/03/barra-segura2-1-1-1-300x43.png 300w,   https://regenere.site/wp-content/uploads/2023/03/barra-segura2-1-1-1-768x110.png 768w,   https://regenere.site/wp-content/uploads/2023/03/barra-segura2-1-1-1.png 1196w" sizes="(max-width: 800px) 100vw, 800px" /></noscript>													</div>
+				</div>
+				<div class="elementor-element elementor-element-5f1f66fb elementor-widget elementor-widget-spacer" data-id="5f1f66fb" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-7d76e188 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="7d76e188" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-1efaadda" data-id="1efaadda" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-e050ca9 elementor-widget elementor-widget-spacer" data-id="e050ca9" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-5dcf0ab6 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="5dcf0ab6" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-38d0aca5" data-id="38d0aca5" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-5c000121 elementor-widget elementor-widget-image" data-id="5c000121" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img decoding="async" width="300" height="54" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%2054'%3E%3C/svg%3E" class="attachment-medium size-medium wp-image-662" alt="" data-lazy-srcset="https://regenere.site/wp-content/uploads/2023/03/Logo-3-1-2-300x54.png 300w,   https://regenere.site/wp-content/uploads/2023/03/Logo-3-1-2-768x137.png 768w,   https://regenere.site/wp-content/uploads/2023/03/Logo-3-1-2.png 857w" data-lazy-sizes="(max-width: 300px) 100vw, 300px" data-lazy-src="https://regenere.site/wp-content/uploads/2023/03/Logo-3-1-2-300x54.png" /><noscript><img loading="lazy" decoding="async" width="300" height="54" src="https://regenere.site/wp-content/uploads/2023/03/Logo-3-1-2-300x54.png" class="attachment-medium size-medium wp-image-662" alt="" srcset="https://regenere.site/wp-content/uploads/2023/03/Logo-3-1-2-300x54.png 300w,   https://regenere.site/wp-content/uploads/2023/03/Logo-3-1-2-768x137.png 768w,   https://regenere.site/wp-content/uploads/2023/03/Logo-3-1-2.png 857w" sizes="(max-width: 300px) 100vw, 300px" /></noscript>													</div>
+				</div>
+				<div class="elementor-element elementor-element-3056a692 elementor-widget elementor-widget-image" data-id="3056a692" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img decoding="async" width="298" height="94" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20298%2094'%3E%3C/svg%3E" class="attachment-medium_large size-medium_large wp-image-868" alt="" data-lazy-src="https://regenere.site/wp-content/uploads/2023/03/animais-1-1-1.png" /><noscript><img loading="lazy" decoding="async" width="298" height="94" src="https://regenere.site/wp-content/uploads/2023/03/animais-1-1-1.png" class="attachment-medium_large size-medium_large wp-image-868" alt="" /></noscript>													</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-60bb8814" data-id="60bb8814" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-2b1b4ff4 elementor-widget elementor-widget-heading" data-id="2b1b4ff4" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">LINKS</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-2c23732d elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="2c23732d" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+					<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<a href="/aviso-legal/">
+
+											<span class="elementor-icon-list-text">Aviso Legal</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="http://mfpdigital.com.br/pedidos/">
+
+											<span class="elementor-icon-list-text">Rastrear pedido</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="/politicas-de-privacidade/">
+
+											<span class="elementor-icon-list-text">Políticas de Privacidade</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="/termos-de-uso/">
+
+											<span class="elementor-icon-list-text">Termos e Condições</span>
+											</a>
+									</li>
+						</ul>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-250fd2ca elementor-widget elementor-widget-image" data-id="250fd2ca" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img width="308" height="145" decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20308%20145'%3E%3C/svg%3E" title="download-1-e1675799027928.png" alt="download-1-e1675799027928.png" data-lazy-src="https://regenere.site/wp-content/uploads/2023/03/download-1-e1675799027928-1.png" /><noscript><img width="308" height="145" decoding="async" src="https://regenere.site/wp-content/uploads/2023/03/download-1-e1675799027928-1.png" title="download-1-e1675799027928.png" alt="download-1-e1675799027928.png" loading="lazy" /></noscript>													</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-3103e0f9" data-id="3103e0f9" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-5739e57a elementor-widget elementor-widget-heading" data-id="5739e57a" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">FORMAS DE PAGAMENTO</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-1b0c5c7b elementor-widget elementor-widget-image" data-id="1b0c5c7b" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img decoding="async" width="250" height="77" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20250%2077'%3E%3C/svg%3E" class="attachment-large size-large wp-image-877" alt="" data-lazy-src="https://regenere.site/wp-content/uploads/2023/03/pagamento-new-2-1-1.png" /><noscript><img loading="lazy" decoding="async" width="250" height="77" src="https://regenere.site/wp-content/uploads/2023/03/pagamento-new-2-1-1.png" class="attachment-large size-large wp-image-877" alt="" /></noscript>													</div>
+				</div>
+				<div class="elementor-element elementor-element-c93a83d elementor-widget elementor-widget-heading" data-id="c93a83d" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">COMPRA 100% SEGURA</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-6044b6be elementor-widget elementor-widget-image" data-id="6044b6be" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img decoding="async" width="465" height="148" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20465%20148'%3E%3C/svg%3E" class="attachment-large size-large wp-image-880" alt="" data-lazy-srcset="https://regenere.site/wp-content/uploads/2023/03/site-seguro-min-1-1-1.png 465w,   https://regenere.site/wp-content/uploads/2023/03/site-seguro-min-1-1-1-300x95.png 300w" data-lazy-sizes="(max-width: 465px) 100vw, 465px" data-lazy-src="https://regenere.site/wp-content/uploads/2023/03/site-seguro-min-1-1-1.png" /><noscript><img loading="lazy" decoding="async" width="465" height="148" src="https://regenere.site/wp-content/uploads/2023/03/site-seguro-min-1-1-1.png" class="attachment-large size-large wp-image-880" alt="" srcset="https://regenere.site/wp-content/uploads/2023/03/site-seguro-min-1-1-1.png 465w,   https://regenere.site/wp-content/uploads/2023/03/site-seguro-min-1-1-1-300x95.png 300w" sizes="(max-width: 465px) 100vw, 465px" /></noscript>													</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<div class="elementor-element elementor-element-29b69182 elementor-widget elementor-widget-spacer" data-id="29b69182" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-3bc12a7e elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="3bc12a7e" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-6f7a0395 elementor-widget elementor-widget-heading" data-id="6f7a0395" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">© 2024 <b>REGENERE</b> - Todos os direitos reservados.</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-c3f4c1b elementor-widget elementor-widget-spacer" data-id="c3f4c1b" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				</div>
+		<link rel='stylesheet' id='pafe-widget-style-free-css' href='https://regenere.site/wp-content/plugins/piotnet-addons-for-elementor/assets/css/minify/widget.min.css?ver=2.4.26' media='all' />
+<script type="rocketlazyloadscript" id="rocket-browser-checker-js-after">
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+</script>
+<script id="rocket-preload-links-js-extra">
+var RocketPreloadLinksConfig = {"excludeUris":"\/(?:.+\/)?feed(?:\/(?:.+\/?)?)?$|\/(?:.+\/)?embed\/|\/(index.php\/)?(.*)wp-json(\/.*|$)|\/refer\/|\/go\/|\/recommend\/|\/recommends\/","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm","siteUrl":"https:\/\/regenere.site","onHoverDelay":"100","rateThrottle":"3"};
+</script>
+<script type="rocketlazyloadscript" id="rocket-preload-links-js-after">
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+</script>
+<script type="rocketlazyloadscript" data-rocket-src="https://regenere.site/wp-content/themes/hello-elementor/assets/js/hello-frontend.min.js?ver=1.0.0" id="hello-theme-frontend-js" defer></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://regenere.site/wp-content/plugins/wp-rocket/assets/js/heartbeat.js?ver=3.15.10" id="heartbeat-js" defer></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://regenere.site/wp-content/plugins/piotnet-addons-for-elementor/assets/js/minify/widget.min.js?ver=2.4.26" id="pafe-widget-free-js" defer></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://regenere.site/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.20.2" id="elementor-pro-webpack-runtime-js" defer></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://regenere.site/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.20.3" id="elementor-webpack-runtime-js" defer></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://regenere.site/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.20.3" id="elementor-frontend-modules-js" defer></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://regenere.site/wp-includes/js/dist/vendor/wp-polyfill-inert.min.js?ver=3.1.2" id="wp-polyfill-inert-js" defer></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://regenere.site/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.14.0" id="regenerator-runtime-js" defer></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://regenere.site/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0" id="wp-polyfill-js"></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://regenere.site/wp-includes/js/dist/hooks.min.js?ver=2810c76e705dd1a53b18" id="wp-hooks-js"></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://regenere.site/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
+<script type="rocketlazyloadscript" id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script>
+<script type="rocketlazyloadscript" id="elementor-pro-frontend-js-before">
+var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/regenere.site\/wp-admin\/admin-ajax.php","nonce":"83eee1888c","urls":{"assets":"https:\/\/regenere.site\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"https:\/\/regenere.site\/wp-json\/"},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"},"x-twitter":{"title":"X"},"threads":{"title":"Threads"}},"facebook_sdk":{"lang":"pt_BR","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/regenere.site\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
+</script>
+<script type="rocketlazyloadscript" data-rocket-src="https://regenere.site/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.20.2" id="elementor-pro-frontend-js" defer></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://regenere.site/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2" id="elementor-waypoints-js" defer></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://regenere.site/wp-includes/js/jquery/ui/core.min.js?ver=1.13.2" id="jquery-ui-core-js" defer></script>
+<script type="rocketlazyloadscript" id="elementor-frontend-js-before">
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Compartilhar no Facebook","shareOnTwitter":"Compartilhar no Twitter","pinIt":"Fixar","download":"Baixar","downloadImage":"Baixar imagem","fullscreen":"Tela cheia","zoom":"Zoom","share":"Compartilhar","playVideo":"Reproduzir v\u00eddeo","previous":"Anterior","next":"Pr\u00f3ximo","close":"Fechar","a11yCarouselWrapperAriaLabel":"Carrossel | Rolagem horizontal: Setas para esquerda e direita","a11yCarouselPrevSlideMessage":"Slide anterior","a11yCarouselNextSlideMessage":"Pr\u00f3ximo slide","a11yCarouselFirstSlideMessage":"Este \u00e9 o primeiro slide","a11yCarouselLastSlideMessage":"Este \u00e9 o \u00faltimo slide","a11yCarouselPaginationBulletMessage":"Ir para o slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Dispositivos m\u00f3veis no modo retrato","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Dispositivos m\u00f3veis no modo paisagem","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet no modo retrato","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet no modo paisagem","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Notebook","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Tela ampla (widescreen)","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.20.3","is_static":false,"experimentalFeatures":{"e_optimized_assets_loading":true,"e_optimized_css_loading":true,"additional_custom_breakpoints":true,"container":true,"e_swiper_latest":true,"theme_builder_v2":true,"hello-theme-header-footer":true,"block_editor_assets_optimize":true,"ai-layout":true,"landing-pages":true,"e_image_loading_optimization":true,"notes":true,"form-submissions":true},"urls":{"assets":"https:\/\/regenere.site\/wp-content\/plugins\/elementor\/assets\/"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description","hello_header_logo_type":"title","hello_footer_logo_type":"logo"},"post":{"id":895,"title":"REGENERE%20K2%20-%20regenere.site","excerpt":"","featuredImage":false}};
+</script>
+<script type="rocketlazyloadscript" data-rocket-src="https://regenere.site/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.20.3" id="elementor-frontend-js" defer></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://regenere.site/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.20.2" id="pro-elements-handlers-js" defer></script>
+<div data-pafe-ajax-url="https://regenere.site/wp-admin/admin-ajax.php"></div><script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://regenere.site/wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js"></script><script>function lazyLoadThumb(e,alt,l){var t='<img data-lazy-src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"><noscript><img src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"></noscript>',a='<button class="play" aria-label="play Youtube video"></button>';if(l){t=t.replace('data-lazy-','');t=t.replace('loading="lazy"','');t=t.replace(/<noscript>.*?<\/noscript>/g,'');}t=t.replace('alt=""','alt="'+alt+'"');return t.replace("ID",e)+a}function lazyLoadYoutubeIframe(){var e=document.createElement("iframe"),t="ID?autoplay=1";t+=0===this.parentNode.dataset.query.length?"":"&"+this.parentNode.dataset.query;e.setAttribute("src",t.replace("ID",this.parentNode.dataset.src)),e.setAttribute("frameborder","0"),e.setAttribute("allowfullscreen","1"),e.setAttribute("allow","accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"),this.parentNode.parentNode.replaceChild(e,this.parentNode)}document.addEventListener("DOMContentLoaded",function(){var exclusions=[];var e,t,p,u,l,a=document.getElementsByClassName("rll-youtube-player");for(t=0;t<a.length;t++)(e=document.createElement("div")),(u='https://i.ytimg.com/vi/ID/hqdefault.jpg'),(u=u.replace('ID',a[t].dataset.id)),(l=exclusions.some(exclusion=>u.includes(exclusion))),e.setAttribute("data-id",a[t].dataset.id),e.setAttribute("data-query",a[t].dataset.query),e.setAttribute("data-src",a[t].dataset.src),(e.innerHTML=lazyLoadThumb(a[t].dataset.id,a[t].dataset.alt,l)),a[t].appendChild(e),(p=e.querySelector(".play")),(p.onclick=lazyLoadYoutubeIframe)});</script>	<script>class RocketElementorAnimation{constructor(){this.deviceMode=document.createElement("span"),this.deviceMode.id="elementor-device-mode-wpr",this.deviceMode.setAttribute("class","elementor-screen-only"),document.body.appendChild(this.deviceMode)}_detectAnimations(){let t=getComputedStyle(this.deviceMode,":after").content.replace(/"/g,"");this.animationSettingKeys=this._listAnimationSettingsKeys(t),document.querySelectorAll(".elementor-invisible[data-settings]").forEach(t=>{const e=t.getBoundingClientRect();if(e.bottom>=0&&e.top<=window.innerHeight)try{this._animateElement(t)}catch(t){}})}_animateElement(t){const e=JSON.parse(t.dataset.settings),i=e._animation_delay||e.animation_delay||0,n=e[this.animationSettingKeys.find(t=>e[t])];if("none"===n)return void t.classList.remove("elementor-invisible");t.classList.remove(n),this.currentAnimation&&t.classList.remove(this.currentAnimation),this.currentAnimation=n;let s=setTimeout(()=>{t.classList.remove("elementor-invisible"),t.classList.add("animated",n),this._removeAnimationSettings(t,e)},i);window.addEventListener("rocket-startLoading",function(){clearTimeout(s)})}_listAnimationSettingsKeys(t="mobile"){const e=[""];switch(t){case"mobile":e.unshift("_mobile");case"tablet":e.unshift("_tablet");case"desktop":e.unshift("_desktop")}const i=[];return["animation","_animation"].forEach(t=>{e.forEach(e=>{i.push(t+e)})}),i}_removeAnimationSettings(t,e){this._listAnimationSettingsKeys().forEach(t=>delete e[t]),t.dataset.settings=JSON.stringify(e)}static run(){const t=new RocketElementorAnimation;requestAnimationFrame(t._detectAnimations.bind(t))}}document.addEventListener("DOMContentLoaded",RocketElementorAnimation.run);</script></body>
+</html>
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1718104210 -->
